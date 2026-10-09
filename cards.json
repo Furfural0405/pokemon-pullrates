@@ -1,0 +1,2706 @@
+[
+  {
+    "id": "001",
+    "number": 1,
+    "label": "001/103",
+    "name": "Exeggcute",
+    "rarity": "Common",
+    "image": "assets/cards/001.webp",
+    "source": "https://media.pokipair.com/2026/09/11172054/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-001.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "002",
+    "number": 2,
+    "label": "002/103",
+    "name": "Alolan Exeggutor",
+    "rarity": "Common",
+    "image": "assets/cards/002.webp",
+    "source": "https://media.pokipair.com/2026/09/11172100/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-002.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "003",
+    "number": 3,
+    "label": "003/103",
+    "name": "Volbeat",
+    "rarity": "Common",
+    "image": "assets/cards/003.webp",
+    "source": "https://media.pokipair.com/2026/09/11172106/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-003.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "004",
+    "number": 4,
+    "label": "004/103",
+    "name": "Illumise",
+    "rarity": "Common",
+    "image": "assets/cards/004.webp",
+    "source": "https://media.pokipair.com/2026/09/11172112/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-004.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "005",
+    "number": 5,
+    "label": "005/103",
+    "name": "Vivillon",
+    "rarity": "Common",
+    "image": "assets/cards/005.webp",
+    "source": "https://media.pokipair.com/2026/09/11172117/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-005.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "006",
+    "number": 6,
+    "label": "006/103",
+    "name": "Moltres",
+    "rarity": "Common",
+    "image": "assets/cards/006.webp",
+    "source": "https://media.pokipair.com/2026/09/11172123/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-006.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "007",
+    "number": 7,
+    "label": "007/103",
+    "name": "Ho-Oh",
+    "rarity": "Rare",
+    "image": "assets/cards/007.webp",
+    "source": "https://media.pokipair.com/2026/09/11172130/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-007.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "008",
+    "number": 8,
+    "label": "008/103",
+    "name": "Reshiram",
+    "rarity": "Rare",
+    "image": "assets/cards/008.webp",
+    "source": "https://media.pokipair.com/2026/09/11172136/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-008.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "009",
+    "number": 9,
+    "label": "009/103",
+    "name": "Fuecoco ex",
+    "rarity": "Double Rare",
+    "image": "assets/cards/009.webp",
+    "source": "https://media.pokipair.com/2026/09/11172141/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-009.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "010",
+    "number": 10,
+    "label": "010/103",
+    "name": "Slowpoke",
+    "rarity": "Common",
+    "image": "assets/cards/010.webp",
+    "source": "https://media.pokipair.com/2026/09/11172146/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-010.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "011",
+    "number": 11,
+    "label": "011/103",
+    "name": "Lapras",
+    "rarity": "Common",
+    "image": "assets/cards/011.webp",
+    "source": "https://media.pokipair.com/2026/09/11172152/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-011.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "012",
+    "number": 12,
+    "label": "012/103",
+    "name": "Articuno",
+    "rarity": "Common",
+    "image": "assets/cards/012.webp",
+    "source": "https://media.pokipair.com/2026/09/11172158/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-012.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "013",
+    "number": 13,
+    "label": "013/103",
+    "name": "Kyogre",
+    "rarity": "Rare",
+    "image": "assets/cards/013.webp",
+    "source": "https://media.pokipair.com/2026/09/11172204/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-013.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "014",
+    "number": 14,
+    "label": "014/103",
+    "name": "Palkia",
+    "rarity": "Rare",
+    "image": "assets/cards/014.webp",
+    "source": "https://media.pokipair.com/2026/09/11172210/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-014.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "015",
+    "number": 15,
+    "label": "015/103",
+    "name": "Greninja ex",
+    "rarity": "Double Rare",
+    "image": "assets/cards/015.webp",
+    "source": "https://media.pokipair.com/2026/09/11172216/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-015.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "016",
+    "number": 16,
+    "label": "016/103",
+    "name": "Wishiwashi",
+    "rarity": "Common",
+    "image": "assets/cards/016.webp",
+    "source": "https://media.pokipair.com/2026/09/11172221/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-016.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "017",
+    "number": 17,
+    "label": "017/103",
+    "name": "Pikachu",
+    "rarity": "Pikachu Rare",
+    "image": "assets/cards/017.webp",
+    "source": "https://media.pokipair.com/2026/09/11172227/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-017.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": true,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "018",
+    "number": 18,
+    "label": "018/103",
+    "name": "Pikachu",
+    "rarity": "Pikachu Rare",
+    "image": "assets/cards/018.webp",
+    "source": "https://media.pokipair.com/2026/09/11172233/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-018.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": true,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "019",
+    "number": 19,
+    "label": "019/103",
+    "name": "Pikachu",
+    "rarity": "Pikachu Rare",
+    "image": "assets/cards/019.webp",
+    "source": "https://media.pokipair.com/2026/09/11172238/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-019.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": true,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "020",
+    "number": 20,
+    "label": "020/103",
+    "name": "Pikachu",
+    "rarity": "Pikachu Rare",
+    "image": "assets/cards/020.webp",
+    "source": "https://media.pokipair.com/2026/09/11172244/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-020.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": true,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "021",
+    "number": 21,
+    "label": "021/103",
+    "name": "Pikachu",
+    "rarity": "Pikachu Rare",
+    "image": "assets/cards/021.webp",
+    "source": "https://media.pokipair.com/2026/09/11172250/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-021.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": true,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "022",
+    "number": 22,
+    "label": "022/103",
+    "name": "Pikachu",
+    "rarity": "Pikachu Rare",
+    "image": "assets/cards/022.webp",
+    "source": "https://media.pokipair.com/2026/09/11172256/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-022.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": true,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "023",
+    "number": 23,
+    "label": "023/103",
+    "name": "Pikachu",
+    "rarity": "Pikachu Rare",
+    "image": "assets/cards/023.webp",
+    "source": "https://media.pokipair.com/2026/09/11172302/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-023.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": true,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "024",
+    "number": 24,
+    "label": "024/103",
+    "name": "Pikachu",
+    "rarity": "Pikachu Rare",
+    "image": "assets/cards/024.webp",
+    "source": "https://media.pokipair.com/2026/09/11172308/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-024.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": true,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "025",
+    "number": 25,
+    "label": "025/103",
+    "name": "Pikachu",
+    "rarity": "Pikachu Rare",
+    "image": "assets/cards/025.webp",
+    "source": "https://media.pokipair.com/2026/09/11172314/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-025.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": true,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "026",
+    "number": 26,
+    "label": "026/103",
+    "name": "Pikachu",
+    "rarity": "Pikachu Rare",
+    "image": "assets/cards/026.webp",
+    "source": "https://media.pokipair.com/2026/09/11172320/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-026.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": true,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "027",
+    "number": 27,
+    "label": "027/103",
+    "name": "Pikachu",
+    "rarity": "Pikachu Rare",
+    "image": "assets/cards/027.webp",
+    "source": "https://media.pokipair.com/2026/09/11172326/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-027.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": true,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "028",
+    "number": 28,
+    "label": "028/103",
+    "name": "Pikachu",
+    "rarity": "Pikachu Rare",
+    "image": "assets/cards/028.webp",
+    "source": "https://media.pokipair.com/2026/09/11172333/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-028.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": true,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "029",
+    "number": 29,
+    "label": "029/103",
+    "name": "Pikachu",
+    "rarity": "Pikachu Rare",
+    "image": "assets/cards/029.webp",
+    "source": "https://media.pokipair.com/2026/09/11172339/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-029.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": true,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "030",
+    "number": 30,
+    "label": "030/103",
+    "name": "Pikachu",
+    "rarity": "Pikachu Rare",
+    "image": "assets/cards/030.webp",
+    "source": "https://media.pokipair.com/2026/09/11172345/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-030.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": true,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "031",
+    "number": 31,
+    "label": "031/103",
+    "name": "Pikachu",
+    "rarity": "Pikachu Rare",
+    "image": "assets/cards/031.webp",
+    "source": "https://media.pokipair.com/2026/09/11172351/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-031.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": true,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "032",
+    "number": 32,
+    "label": "032/103",
+    "name": "Pikachu",
+    "rarity": "Pikachu Rare",
+    "image": "assets/cards/032.webp",
+    "source": "https://media.pokipair.com/2026/09/11172357/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-032.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": true,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "033",
+    "number": 33,
+    "label": "033/103",
+    "name": "Pikachu",
+    "rarity": "Pikachu Rare",
+    "image": "assets/cards/033.webp",
+    "source": "https://media.pokipair.com/2026/09/11172403/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-033.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": true,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "034",
+    "number": 34,
+    "label": "034/103",
+    "name": "Pikachu",
+    "rarity": "Pikachu Rare",
+    "image": "assets/cards/034.webp",
+    "source": "https://media.pokipair.com/2026/09/11172409/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-034.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": true,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "035",
+    "number": 35,
+    "label": "035/103",
+    "name": "Pikachu",
+    "rarity": "Pikachu Rare",
+    "image": "assets/cards/035.webp",
+    "source": "https://media.pokipair.com/2026/09/11172414/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-035.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": true,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "036",
+    "number": 36,
+    "label": "036/103",
+    "name": "Pikachu",
+    "rarity": "Pikachu Rare",
+    "image": "assets/cards/036.webp",
+    "source": "https://media.pokipair.com/2026/09/11172420/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-036.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": true,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "037",
+    "number": 37,
+    "label": "037/103",
+    "name": "Pikachu",
+    "rarity": "Pikachu Rare",
+    "image": "assets/cards/037.webp",
+    "source": "https://media.pokipair.com/2026/09/11172426/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-037.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": true,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "038",
+    "number": 38,
+    "label": "038/103",
+    "name": "Pikachu",
+    "rarity": "Pikachu Rare",
+    "image": "assets/cards/038.webp",
+    "source": "https://media.pokipair.com/2026/09/11172432/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-038.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": true,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "039",
+    "number": 39,
+    "label": "039/103",
+    "name": "Pikachu",
+    "rarity": "Pikachu Rare",
+    "image": "assets/cards/039.webp",
+    "source": "https://media.pokipair.com/2026/09/11172438/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-039.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": true,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "040",
+    "number": 40,
+    "label": "040/103",
+    "name": "Pikachu",
+    "rarity": "Pikachu Rare",
+    "image": "assets/cards/040.webp",
+    "source": "https://media.pokipair.com/2026/09/11172443/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-040.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": true,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "041",
+    "number": 41,
+    "label": "041/103",
+    "name": "Pikachu",
+    "rarity": "Pikachu Rare",
+    "image": "assets/cards/041.webp",
+    "source": "https://media.pokipair.com/2026/09/11172449/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-041.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": true,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "042",
+    "number": 42,
+    "label": "042/103",
+    "name": "Pikachu",
+    "rarity": "Pikachu Rare",
+    "image": "assets/cards/042.webp",
+    "source": "https://media.pokipair.com/2026/09/11172455/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-042.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": true,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "043",
+    "number": 43,
+    "label": "043/103",
+    "name": "Pikachu",
+    "rarity": "Pikachu Rare",
+    "image": "assets/cards/043.webp",
+    "source": "https://media.pokipair.com/2026/09/11173148/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-043.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": true,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "044",
+    "number": 44,
+    "label": "044/103",
+    "name": "Pikachu",
+    "rarity": "Pikachu Rare",
+    "image": "assets/cards/044.webp",
+    "source": "https://media.pokipair.com/2026/09/11173153/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-044.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": true,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "045",
+    "number": 45,
+    "label": "045/103",
+    "name": "Pikachu",
+    "rarity": "Pikachu Rare",
+    "image": "assets/cards/045.webp",
+    "source": "https://media.pokipair.com/2026/09/11173159/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-045.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": true,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "046",
+    "number": 46,
+    "label": "046/103",
+    "name": "Pikachu",
+    "rarity": "Pikachu Rare",
+    "image": "assets/cards/046.webp",
+    "source": "https://media.pokipair.com/2026/09/11173203/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-046.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": true,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "047",
+    "number": 47,
+    "label": "047/103",
+    "name": "Pikachu ex",
+    "rarity": "Double Rare",
+    "image": "assets/cards/047.webp",
+    "source": "https://media.pokipair.com/2026/09/11173208/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-047.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "048",
+    "number": 48,
+    "label": "048/103",
+    "name": "Pikachu ex",
+    "rarity": "Double Rare",
+    "image": "assets/cards/048.webp",
+    "source": "https://media.pokipair.com/2026/09/11173212/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-048.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "049",
+    "number": 49,
+    "label": "049/103",
+    "name": "Zapdos",
+    "rarity": "Common",
+    "image": "assets/cards/049.webp",
+    "source": "https://media.pokipair.com/2026/09/11173217/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-049.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "050",
+    "number": 50,
+    "label": "050/103",
+    "name": "Zekrom",
+    "rarity": "Rare",
+    "image": "assets/cards/050.webp",
+    "source": "https://media.pokipair.com/2026/09/11173222/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-050.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "051",
+    "number": 51,
+    "label": "051/103",
+    "name": "Toxtricity",
+    "rarity": "Common",
+    "image": "assets/cards/051.webp",
+    "source": "https://media.pokipair.com/2026/09/11173226/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-051.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "052",
+    "number": 52,
+    "label": "052/103",
+    "name": "Morpeko",
+    "rarity": "Common",
+    "image": "assets/cards/052.webp",
+    "source": "https://media.pokipair.com/2026/09/11173231/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-052.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "053",
+    "number": 53,
+    "label": "053/103",
+    "name": "Miraidon",
+    "rarity": "Rare",
+    "image": "assets/cards/053.webp",
+    "source": "https://media.pokipair.com/2026/09/11173236/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-053.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "054",
+    "number": 54,
+    "label": "054/103",
+    "name": "Mewtwo",
+    "rarity": "Rare",
+    "image": "assets/cards/054.webp",
+    "source": "https://media.pokipair.com/2026/09/11173241/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-054.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "055",
+    "number": 55,
+    "label": "055/103",
+    "name": "Mewtwo ex",
+    "rarity": "Double Rare",
+    "image": "assets/cards/055.webp",
+    "source": "https://media.pokipair.com/2026/09/11173246/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-055.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "056",
+    "number": 56,
+    "label": "056/103",
+    "name": "Mew",
+    "rarity": "Rare",
+    "image": "assets/cards/056.webp",
+    "source": "https://media.pokipair.com/2026/09/11173250/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-056.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "057",
+    "number": 57,
+    "label": "057/103",
+    "name": "Mew ex",
+    "rarity": "Double Rare",
+    "image": "assets/cards/057.webp",
+    "source": "https://media.pokipair.com/2026/09/11173255/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-057.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "058",
+    "number": 58,
+    "label": "058/103",
+    "name": "Espeon",
+    "rarity": "Common",
+    "image": "assets/cards/058.webp",
+    "source": "https://image.pokemon.com.cn/wp-content/uploads/2026/06/20260909140934298.png",
+    "source_page": "https://www.pokemon.cn/tcg/product/22237.html",
+    "dimensions": [
+      868,
+      1210
+    ],
+    "booster_slot": false,
+    "verification": "official-Chinese-image; visual-artwork-and-number-checked"
+  },
+  {
+    "id": "059",
+    "number": 59,
+    "label": "059/103",
+    "name": "Sylveon ex",
+    "rarity": "Double Rare",
+    "image": "assets/cards/059.webp",
+    "source": "https://media.pokipair.com/2026/09/11173304/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-059.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "060",
+    "number": 60,
+    "label": "060/103",
+    "name": "Unown",
+    "rarity": "Common",
+    "image": "assets/cards/060.webp",
+    "source": "https://media.pokipair.com/2026/09/11173309/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-060.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "061",
+    "number": 61,
+    "label": "061/103",
+    "name": "Drifloon",
+    "rarity": "Common",
+    "image": "assets/cards/061.webp",
+    "source": "https://media.pokipair.com/2026/09/11173313/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-061.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "062",
+    "number": 62,
+    "label": "062/103",
+    "name": "Chandelure",
+    "rarity": "Common",
+    "image": "assets/cards/062.webp",
+    "source": "https://media.pokipair.com/2026/09/11173317/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-062.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "063",
+    "number": 63,
+    "label": "063/103",
+    "name": "Xerneas",
+    "rarity": "Rare",
+    "image": "assets/cards/063.webp",
+    "source": "https://media.pokipair.com/2026/09/11173321/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-063.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "064",
+    "number": 64,
+    "label": "064/103",
+    "name": "Cosmog",
+    "rarity": "Common",
+    "image": "assets/cards/064.webp",
+    "source": "https://media.pokipair.com/2026/09/11173326/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-064.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "065",
+    "number": 65,
+    "label": "065/103",
+    "name": "Cosmoem",
+    "rarity": "Common",
+    "image": "assets/cards/065.webp",
+    "source": "https://media.pokipair.com/2026/09/11173331/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-065.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "066",
+    "number": 66,
+    "label": "066/103",
+    "name": "Lunala",
+    "rarity": "Rare",
+    "image": "assets/cards/066.webp",
+    "source": "https://media.pokipair.com/2026/09/11173336/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-066.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "067",
+    "number": 67,
+    "label": "067/103",
+    "name": "Gimmighoul",
+    "rarity": "Common",
+    "image": "assets/cards/067.webp",
+    "source": "https://media.pokipair.com/2026/09/11173340/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-067.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "068",
+    "number": 68,
+    "label": "068/103",
+    "name": "Groudon",
+    "rarity": "Rare",
+    "image": "assets/cards/068.webp",
+    "source": "https://media.pokipair.com/2026/09/11173344/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-068.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "069",
+    "number": 69,
+    "label": "069/103",
+    "name": "Lucario",
+    "rarity": "Common",
+    "image": "assets/cards/069.webp",
+    "source": "https://media.pokipair.com/2026/09/11173349/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-069.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "070",
+    "number": 70,
+    "label": "070/103",
+    "name": "Seismitoad",
+    "rarity": "Common",
+    "image": "assets/cards/070.webp",
+    "source": "https://media.pokipair.com/2026/09/11173354/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-070.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "071",
+    "number": 71,
+    "label": "071/103",
+    "name": "Lycanroc",
+    "rarity": "Common",
+    "image": "assets/cards/071.webp",
+    "source": "https://media.pokipair.com/2026/09/11173359/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-071.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "072",
+    "number": 72,
+    "label": "072/103",
+    "name": "Koraidon",
+    "rarity": "Rare",
+    "image": "assets/cards/072.webp",
+    "source": "https://media.pokipair.com/2026/09/11173404/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-072.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "073",
+    "number": 73,
+    "label": "073/103",
+    "name": "Nidoran ♀",
+    "rarity": "Common",
+    "image": "assets/cards/073.webp",
+    "source": "https://media.pokipair.com/2026/09/11173409/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-073.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "074",
+    "number": 74,
+    "label": "074/103",
+    "name": "Nidorina",
+    "rarity": "Common",
+    "image": "assets/cards/074.webp",
+    "source": "https://media.pokipair.com/2026/09/11173414/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-074.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "075",
+    "number": 75,
+    "label": "075/103",
+    "name": "Alolan Meowth",
+    "rarity": "Common",
+    "image": "assets/cards/075.webp",
+    "source": "https://media.pokipair.com/2026/09/11173418/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-075.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "076",
+    "number": 76,
+    "label": "076/103",
+    "name": "Gengar ex",
+    "rarity": "Double Rare",
+    "image": "assets/cards/076.webp",
+    "source": "https://media.pokipair.com/2026/09/11173422/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-076.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "077",
+    "number": 77,
+    "label": "077/103",
+    "name": "Umbreon",
+    "rarity": "Common",
+    "image": "assets/cards/077.webp",
+    "source": "https://image.pokemon.com.cn/wp-content/uploads/2026/06/20260909140938493.png",
+    "source_page": "https://www.pokemon.cn/tcg/product/22237.html",
+    "dimensions": [
+      868,
+      1210
+    ],
+    "booster_slot": false,
+    "verification": "official-Chinese-image; visual-artwork-and-number-checked"
+  },
+  {
+    "id": "078",
+    "number": 78,
+    "label": "078/103",
+    "name": "Scraggy",
+    "rarity": "Common",
+    "image": "assets/cards/078.webp",
+    "source": "https://image.pokemon.com.cn/wp-content/uploads/2026/06/20260909140929728.png",
+    "source_page": "https://www.pokemon.cn/tcg/product/22237.html",
+    "dimensions": [
+      868,
+      1210
+    ],
+    "booster_slot": false,
+    "verification": "official-Chinese-image; visual-artwork-and-number-checked"
+  },
+  {
+    "id": "079",
+    "number": 79,
+    "label": "079/103",
+    "name": "Yveltal",
+    "rarity": "Rare",
+    "image": "assets/cards/079.webp",
+    "source": "https://media.pokipair.com/2026/09/11173435/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-079.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "080",
+    "number": 80,
+    "label": "080/103",
+    "name": "Galarian Meowth",
+    "rarity": "Common",
+    "image": "assets/cards/080.webp",
+    "source": "https://media.pokipair.com/2026/09/11173440/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-080.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "081",
+    "number": 81,
+    "label": "081/103",
+    "name": "Jirachi ex",
+    "rarity": "Double Rare",
+    "image": "assets/cards/081.webp",
+    "source": "https://media.pokipair.com/2026/09/11173444/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-081.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "082",
+    "number": 82,
+    "label": "082/103",
+    "name": "Dialga",
+    "rarity": "Rare",
+    "image": "assets/cards/082.webp",
+    "source": "https://media.pokipair.com/2026/09/11173448/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-082.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "083",
+    "number": 83,
+    "label": "083/103",
+    "name": "Ferrothorn",
+    "rarity": "Common",
+    "image": "assets/cards/083.webp",
+    "source": "https://media.pokipair.com/2026/09/11173452/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-083.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "084",
+    "number": 84,
+    "label": "084/103",
+    "name": "Solgaleo",
+    "rarity": "Rare",
+    "image": "assets/cards/084.webp",
+    "source": "https://media.pokipair.com/2026/09/11173457/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-084.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "085",
+    "number": 85,
+    "label": "085/103",
+    "name": "Zacian",
+    "rarity": "Rare",
+    "image": "assets/cards/085.webp",
+    "source": "https://media.pokipair.com/2026/09/11173502/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-085.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "086",
+    "number": 86,
+    "label": "086/103",
+    "name": "Zamazenta",
+    "rarity": "Rare",
+    "image": "assets/cards/086.webp",
+    "source": "https://media.pokipair.com/2026/09/11173507/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-086.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "087",
+    "number": 87,
+    "label": "087/103",
+    "name": "Gholdengo",
+    "rarity": "Common",
+    "image": "assets/cards/087.webp",
+    "source": "https://media.pokipair.com/2026/09/11173512/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-087.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "088",
+    "number": 88,
+    "label": "088/103",
+    "name": "Salamence ex",
+    "rarity": "Double Rare",
+    "image": "assets/cards/088.webp",
+    "source": "https://media.pokipair.com/2026/09/11173516/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-088.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "089",
+    "number": 89,
+    "label": "089/103",
+    "name": "Jangmo-o",
+    "rarity": "Common",
+    "image": "assets/cards/089.webp",
+    "source": "https://media.pokipair.com/2026/09/11173521/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-089.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "090",
+    "number": 90,
+    "label": "090/103",
+    "name": "Hakamo-o",
+    "rarity": "Common",
+    "image": "assets/cards/090.webp",
+    "source": "https://media.pokipair.com/2026/09/11173526/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-090.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "091",
+    "number": 91,
+    "label": "091/103",
+    "name": "Kommo-o",
+    "rarity": "Common",
+    "image": "assets/cards/091.webp",
+    "source": "https://media.pokipair.com/2026/09/11173530/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-091.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "092",
+    "number": 92,
+    "label": "092/103",
+    "name": "Meowth",
+    "rarity": "Common",
+    "image": "assets/cards/092.webp",
+    "source": "https://media.pokipair.com/2026/09/11173535/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-092.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "093",
+    "number": 93,
+    "label": "093/103",
+    "name": "Ditto",
+    "rarity": "Common",
+    "image": "assets/cards/093.webp",
+    "source": "https://image.pokemon.com.cn/wp-content/uploads/2026/06/20260909140936326.png",
+    "source_page": "https://www.pokemon.cn/tcg/product/22237.html",
+    "dimensions": [
+      868,
+      1210
+    ],
+    "booster_slot": false,
+    "verification": "official-Chinese-image; visual-artwork-and-number-checked"
+  },
+  {
+    "id": "094",
+    "number": 94,
+    "label": "094/103",
+    "name": "Eevee",
+    "rarity": "Common",
+    "image": "assets/cards/094.webp",
+    "source": "https://media.pokipair.com/2026/09/11173544/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-094.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "095",
+    "number": 95,
+    "label": "095/103",
+    "name": "Snorlax",
+    "rarity": "Common",
+    "image": "assets/cards/095.webp",
+    "source": "https://media.pokipair.com/2026/09/11173548/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-095.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "096",
+    "number": 96,
+    "label": "096/103",
+    "name": "Igglybuff",
+    "rarity": "Common",
+    "image": "assets/cards/096.webp",
+    "source": "https://media.pokipair.com/2026/09/11173553/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-096.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "097",
+    "number": 97,
+    "label": "097/103",
+    "name": "Lugia",
+    "rarity": "Rare",
+    "image": "assets/cards/097.webp",
+    "source": "https://media.pokipair.com/2026/09/11173557/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-097.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "098",
+    "number": 98,
+    "label": "098/103",
+    "name": "Hisuian Zorua",
+    "rarity": "Common",
+    "image": "assets/cards/098.webp",
+    "source": "https://media.pokipair.com/2026/09/11173602/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-098.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "099",
+    "number": 99,
+    "label": "099/103",
+    "name": "Hisuian Zoroark",
+    "rarity": "Common",
+    "image": "assets/cards/099.webp",
+    "source": "https://media.pokipair.com/2026/09/11173607/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-099.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "100",
+    "number": 100,
+    "label": "100/103",
+    "name": "Maushold",
+    "rarity": "Common",
+    "image": "assets/cards/100.webp",
+    "source": "https://media.pokipair.com/2026/09/11173612/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-100.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "101",
+    "number": 101,
+    "label": "101/103",
+    "name": "Ultra Ball",
+    "rarity": "Common",
+    "image": "assets/cards/101.webp",
+    "source": "https://media.pokipair.com/2026/09/11173616/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-101.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "102",
+    "number": 102,
+    "label": "102/103",
+    "name": "Poke Pad",
+    "rarity": "Common",
+    "image": "assets/cards/102.webp",
+    "source": "https://media.pokipair.com/2026/09/11173621/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-102.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "103",
+    "number": 103,
+    "label": "103/103",
+    "name": "Switch",
+    "rarity": "Common",
+    "image": "assets/cards/103.webp",
+    "source": "https://media.pokipair.com/2026/09/11173626/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-103.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "104",
+    "number": 104,
+    "label": "104/103",
+    "name": "Alolan Exeggutor",
+    "rarity": "Art Rare",
+    "image": "assets/cards/104.webp",
+    "source": "https://media.pokipair.com/2026/09/11173630/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-104.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "105",
+    "number": 105,
+    "label": "105/103",
+    "name": "Moltres",
+    "rarity": "Art Rare",
+    "image": "assets/cards/105.webp",
+    "source": "https://media.pokipair.com/2026/09/11173635/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-105.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "106",
+    "number": 106,
+    "label": "106/103",
+    "name": "Lapras",
+    "rarity": "Art Rare",
+    "image": "assets/cards/106.webp",
+    "source": "https://media.pokipair.com/2026/09/11173640/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-106.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "107",
+    "number": 107,
+    "label": "107/103",
+    "name": "Articuno",
+    "rarity": "Art Rare",
+    "image": "assets/cards/107.webp",
+    "source": "https://media.pokipair.com/2026/09/11173645/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-107.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "108",
+    "number": 108,
+    "label": "108/103",
+    "name": "Zapdos",
+    "rarity": "Art Rare",
+    "image": "assets/cards/108.webp",
+    "source": "https://media.pokipair.com/2026/09/11173649/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-108.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "109",
+    "number": 109,
+    "label": "109/103",
+    "name": "Toxtricity",
+    "rarity": "Art Rare",
+    "image": "assets/cards/109.webp",
+    "source": "https://media.pokipair.com/2026/09/11173653/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-109.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "110",
+    "number": 110,
+    "label": "110/103",
+    "name": "Morpeko",
+    "rarity": "Art Rare",
+    "image": "assets/cards/110.webp",
+    "source": "https://media.pokipair.com/2026/09/11173657/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-110.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "111",
+    "number": 111,
+    "label": "111/103",
+    "name": "Drifloon",
+    "rarity": "Art Rare",
+    "image": "assets/cards/111.webp",
+    "source": "https://media.pokipair.com/2026/09/11173703/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-111.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "112",
+    "number": 112,
+    "label": "112/103",
+    "name": "Chandelure",
+    "rarity": "Art Rare",
+    "image": "assets/cards/112.webp",
+    "source": "https://media.pokipair.com/2026/09/11173707/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-112.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "113",
+    "number": 113,
+    "label": "113/103",
+    "name": "Lycanroc",
+    "rarity": "Art Rare",
+    "image": "assets/cards/113.webp",
+    "source": "https://media.pokipair.com/2026/09/11173711/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-113.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "114",
+    "number": 114,
+    "label": "114/103",
+    "name": "Nidorina",
+    "rarity": "Art Rare",
+    "image": "assets/cards/114.webp",
+    "source": "https://media.pokipair.com/2026/09/11173716/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-114.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "115",
+    "number": 115,
+    "label": "115/103",
+    "name": "Alolan Meowth",
+    "rarity": "Art Rare",
+    "image": "assets/cards/115.webp",
+    "source": "https://media.pokipair.com/2026/09/11173720/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-115.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "116",
+    "number": 116,
+    "label": "116/103",
+    "name": "Scraggy",
+    "rarity": "Art Rare",
+    "image": "assets/cards/116.webp",
+    "source": "https://media.pokipair.com/2026/09/11173724/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-116.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "117",
+    "number": 117,
+    "label": "117/103",
+    "name": "Galarian Meowth",
+    "rarity": "Art Rare",
+    "image": "assets/cards/117.webp",
+    "source": "https://media.pokipair.com/2026/09/11173729/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-117.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "118",
+    "number": 118,
+    "label": "118/103",
+    "name": "Gholdengo",
+    "rarity": "Art Rare",
+    "image": "assets/cards/118.webp",
+    "source": "https://media.pokipair.com/2026/09/11173733/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-118.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "120",
+    "number": 120,
+    "label": "120/103",
+    "name": "Meowth",
+    "rarity": "Art Rare",
+    "image": "assets/cards/120.webp",
+    "source": "https://media.pokipair.com/2026/09/11173737/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-119.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "121",
+    "number": 121,
+    "label": "121/103",
+    "name": "Ditto",
+    "rarity": "Art Rare",
+    "image": "assets/cards/121.webp",
+    "source": "https://media.pokipair.com/2026/09/11173742/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-120.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "122",
+    "number": 122,
+    "label": "122/103",
+    "name": "Hisuian Zorua",
+    "rarity": "Art Rare",
+    "image": "assets/cards/122.webp",
+    "source": "https://media.pokipair.com/2026/09/11173746/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-121.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "123",
+    "number": 123,
+    "label": "123/103",
+    "name": "Maushold",
+    "rarity": "Art Rare",
+    "image": "assets/cards/123.webp",
+    "source": "https://media.pokipair.com/2026/09/11173750/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-122.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "124",
+    "number": 124,
+    "label": "124/103",
+    "name": "Fuecoco ex",
+    "rarity": "Special Art Rare",
+    "image": "assets/cards/124.webp",
+    "source": "https://media.pokipair.com/2026/09/11173754/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-123.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "125",
+    "number": 125,
+    "label": "125/103",
+    "name": "Greninja ex",
+    "rarity": "Special Art Rare",
+    "image": "assets/cards/125.webp",
+    "source": "https://media.pokipair.com/2026/09/11173759/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-124.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "126",
+    "number": 126,
+    "label": "126/103",
+    "name": "Pikachu ex",
+    "rarity": "Special Art Rare",
+    "image": "assets/cards/126.webp",
+    "source": "https://media.pokipair.com/2026/09/11173804/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-125.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "127",
+    "number": 127,
+    "label": "127/103",
+    "name": "Pikachu ex",
+    "rarity": "Special Art Rare",
+    "image": "assets/cards/127.webp",
+    "source": "https://media.pokipair.com/2026/09/11173808/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-126.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "130",
+    "number": 130,
+    "label": "130/103",
+    "name": "Sylveon ex",
+    "rarity": "Special Art Rare",
+    "image": "assets/cards/130.webp",
+    "source": "https://media.pokipair.com/2026/09/11173813/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-127.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "132",
+    "number": 132,
+    "label": "132/103",
+    "name": "Jirachi ex",
+    "rarity": "Special Art Rare",
+    "image": "assets/cards/132.webp",
+    "source": "https://media.pokipair.com/2026/09/11173817/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-128.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "133",
+    "number": 133,
+    "label": "133/103",
+    "name": "Salamence ex",
+    "rarity": "Special Art Rare",
+    "image": "assets/cards/133.webp",
+    "source": "https://media.pokipair.com/2026/09/11173822/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-129.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "134",
+    "number": 134,
+    "label": "134/103",
+    "name": "Mewtwo ex",
+    "rarity": "Futuristic Rare",
+    "image": "assets/cards/134.webp",
+    "source": "https://media.pokipair.com/2026/09/11173827/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-130.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "135",
+    "number": 135,
+    "label": "135/103",
+    "name": "Mew ex",
+    "rarity": "Futuristic Rare",
+    "image": "assets/cards/135.webp",
+    "source": "https://media.pokipair.com/2026/09/11173832/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-131.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "136",
+    "number": 136,
+    "label": "136/103",
+    "name": "Pikachu",
+    "rarity": "Reprint",
+    "image": "assets/cards/136.webp",
+    "source": "https://media.pokipair.com/2026/09/11173838/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-132.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "137",
+    "number": 137,
+    "label": "137/103",
+    "name": "Charizard",
+    "rarity": "Reprint",
+    "image": "assets/cards/137.webp",
+    "source": "https://image.pokemon.com.cn/wp-content/uploads/2026/06/56a07d02bdcbb53ce7c9dc7658732fcb.png",
+    "source_page": "https://www.pokemon.cn/tcg/product/22237.html",
+    "dimensions": [
+      868,
+      1212
+    ],
+    "booster_slot": false,
+    "verification": "official-Chinese-image; visual-artwork-and-number-checked"
+  },
+  {
+    "id": "138",
+    "number": 138,
+    "label": "138/103",
+    "name": "Misty",
+    "rarity": "Reprint",
+    "image": "assets/cards/138.webp",
+    "source": "https://media.pokipair.com/2026/09/11173850/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-134.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "139",
+    "number": 139,
+    "label": "139/103",
+    "name": "Erika's Jigglypuff",
+    "rarity": "Reprint",
+    "image": "assets/cards/139.webp",
+    "source": "https://media.pokipair.com/2026/09/11173856/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-135.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "140",
+    "number": 140,
+    "label": "140/103",
+    "name": "Sneasel",
+    "rarity": "Reprint",
+    "image": "assets/cards/140.webp",
+    "source": "https://media.pokipair.com/2026/09/11173903/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-136.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "141",
+    "number": 141,
+    "label": "141/103",
+    "name": "Shining Celebi",
+    "rarity": "Reprint",
+    "image": "assets/cards/141.webp",
+    "source": "https://media.pokipair.com/2026/09/11173909/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-137.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "142",
+    "number": 142,
+    "label": "142/103",
+    "name": "Lugia",
+    "rarity": "Reprint",
+    "image": "assets/cards/142.webp",
+    "source": "https://media.pokipair.com/2026/09/11173915/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-138.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "143",
+    "number": 143,
+    "label": "143/103",
+    "name": "Delcatty",
+    "rarity": "Reprint",
+    "image": "assets/cards/143.webp",
+    "source": "https://media.pokipair.com/2026/09/11173921/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-139.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "144",
+    "number": 144,
+    "label": "144/103",
+    "name": "Dark Tyranitar",
+    "rarity": "Reprint",
+    "image": "assets/cards/144.webp",
+    "source": "https://media.pokipair.com/2026/09/11173925/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-140.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "145",
+    "number": 145,
+    "label": "145/103",
+    "name": "Scizor ex",
+    "rarity": "Reprint",
+    "image": "assets/cards/145.webp",
+    "source": "https://media.pokipair.com/2026/09/11173930/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-141.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "146",
+    "number": 146,
+    "label": "146/103",
+    "name": "Metagross",
+    "rarity": "Reprint",
+    "image": "assets/cards/146.webp",
+    "source": "https://media.pokipair.com/2026/09/11173934/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-142.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "147",
+    "number": 147,
+    "label": "147/103",
+    "name": "Palkia LV.X",
+    "rarity": "Reprint",
+    "image": "assets/cards/147.webp",
+    "source": "https://media.pokipair.com/2026/09/11173939/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-143.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "148",
+    "number": 148,
+    "label": "148/103",
+    "name": "Uxie",
+    "rarity": "Reprint",
+    "image": "assets/cards/148.webp",
+    "source": "https://media.pokipair.com/2026/09/11173943/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-144.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "149",
+    "number": 149,
+    "label": "149/103",
+    "name": "Crobat G",
+    "rarity": "Reprint",
+    "image": "assets/cards/149.webp",
+    "source": "https://media.pokipair.com/2026/09/11173948/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-145.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "150",
+    "number": 150,
+    "label": "150/103",
+    "name": "Gengar",
+    "rarity": "Reprint",
+    "image": "assets/cards/150.webp",
+    "source": "https://media.pokipair.com/2026/09/11173953/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-146.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "151",
+    "number": 151,
+    "label": "151/103",
+    "name": "Darkrai & Cresselia LEGEND",
+    "rarity": "Reprint",
+    "image": "assets/cards/151.webp",
+    "source": "https://media.pokipair.com/2026/09/11173958/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-147.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "152",
+    "number": 152,
+    "label": "152/103",
+    "name": "Darkrai & Cresselia LEGEND",
+    "rarity": "Reprint",
+    "image": "assets/cards/152.webp",
+    "source": "https://media.pokipair.com/2026/09/11174004/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-148.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "153",
+    "number": 153,
+    "label": "153/103",
+    "name": "N",
+    "rarity": "Reprint",
+    "image": "assets/cards/153.webp",
+    "source": "https://media.pokipair.com/2026/09/11174008/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-149.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "154",
+    "number": 154,
+    "label": "154/103",
+    "name": "Rayquaza EX",
+    "rarity": "Reprint",
+    "image": "assets/cards/154.webp",
+    "source": "https://media.pokipair.com/2026/09/11174013/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-150.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "155",
+    "number": 155,
+    "label": "155/103",
+    "name": "Genesect EX",
+    "rarity": "Reprint",
+    "image": "assets/cards/155.webp",
+    "source": "https://media.pokipair.com/2026/09/11174017/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-151.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "156",
+    "number": 156,
+    "label": "156/103",
+    "name": "M Gardevoir EX",
+    "rarity": "Reprint",
+    "image": "assets/cards/156.webp",
+    "source": "https://media.pokipair.com/2026/09/11174022/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-152.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "157",
+    "number": 157,
+    "label": "157/103",
+    "name": "Greninja BREAK",
+    "rarity": "Reprint",
+    "image": "assets/cards/157.webp",
+    "source": "https://media.pokipair.com/2026/09/11174027/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-153.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "158",
+    "number": 158,
+    "label": "158/103",
+    "name": "Solgaleo GX",
+    "rarity": "Reprint",
+    "image": "assets/cards/158.webp",
+    "source": "https://media.pokipair.com/2026/09/11174031/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-154.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "159",
+    "number": 159,
+    "label": "159/103",
+    "name": "Buzzwole GX",
+    "rarity": "Reprint",
+    "image": "assets/cards/159.webp",
+    "source": "https://media.pokipair.com/2026/09/11174035/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-155.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "160",
+    "number": 160,
+    "label": "160/103",
+    "name": "Pikachu & Zekrom GX",
+    "rarity": "Reprint",
+    "image": "assets/cards/160.webp",
+    "source": "https://image.pokemon.com.cn/wp-content/uploads/2026/06/1b7c93861465b1a30b67417599e0bccd.png",
+    "source_page": "https://www.pokemon.cn/tcg/product/22237.html",
+    "dimensions": [
+      868,
+      1212
+    ],
+    "booster_slot": false,
+    "verification": "official-Chinese-image; visual-artwork-and-number-checked"
+  },
+  {
+    "id": "161",
+    "number": 161,
+    "label": "161/103",
+    "name": "Zacian V",
+    "rarity": "Reprint",
+    "image": "assets/cards/161.webp",
+    "source": "https://media.pokipair.com/2026/09/11174044/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-157.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "162",
+    "number": 162,
+    "label": "162/103",
+    "name": "Raikou",
+    "rarity": "Reprint",
+    "image": "assets/cards/162.webp",
+    "source": "https://media.pokipair.com/2026/09/11174049/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-158.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "163",
+    "number": 163,
+    "label": "163/103",
+    "name": "Mew VMAX",
+    "rarity": "Reprint",
+    "image": "assets/cards/163.webp",
+    "source": "https://image.pokemon.com.cn/wp-content/uploads/2026/06/20260909140922676.png",
+    "source_page": "https://www.pokemon.cn/tcg/product/22237.html",
+    "dimensions": [
+      868,
+      1210
+    ],
+    "booster_slot": false,
+    "verification": "official-Chinese-image; visual-artwork-and-number-checked"
+  },
+  {
+    "id": "164",
+    "number": 164,
+    "label": "164/103",
+    "name": "Arceus VSTAR",
+    "rarity": "Reprint",
+    "image": "assets/cards/164.webp",
+    "source": "https://media.pokipair.com/2026/09/11174058/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-160.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "165",
+    "number": 165,
+    "label": "165/103",
+    "name": "Magikarp",
+    "rarity": "Reprint",
+    "image": "assets/cards/165.webp",
+    "source": "https://image.pokemon.com.cn/wp-content/uploads/2026/06/20260909140924291.png",
+    "source_page": "https://www.pokemon.cn/tcg/product/22237.html",
+    "dimensions": [
+      868,
+      1210
+    ],
+    "booster_slot": false,
+    "verification": "official-Chinese-image; visual-artwork-and-number-checked"
+  },
+  {
+    "id": "energy-darkness",
+    "number": 166,
+    "label": "Basis-Energie",
+    "name": "Basic Darkness Energy",
+    "rarity": "Common",
+    "image": "assets/cards/energy-darkness.webp",
+    "source": "https://media.pokipair.com/2026/09/11174108/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-162.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "energy-fighting",
+    "number": 167,
+    "label": "Basis-Energie",
+    "name": "Basic Fighting Energy",
+    "rarity": "Common",
+    "image": "assets/cards/energy-fighting.webp",
+    "source": "https://media.pokipair.com/2026/09/11174113/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-163.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "energy-fire",
+    "number": 168,
+    "label": "Basis-Energie",
+    "name": "Basic Fire Energy",
+    "rarity": "Common",
+    "image": "assets/cards/energy-fire.webp",
+    "source": "https://media.pokipair.com/2026/09/11174118/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-164.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "energy-grass",
+    "number": 169,
+    "label": "Basis-Energie",
+    "name": "Basic Grass Energy",
+    "rarity": "Common",
+    "image": "assets/cards/energy-grass.webp",
+    "source": "https://media.pokipair.com/2026/09/11174123/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-165.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "energy-lightning",
+    "number": 170,
+    "label": "Basis-Energie",
+    "name": "Basic Lightning Energy",
+    "rarity": "Common",
+    "image": "assets/cards/energy-lightning.webp",
+    "source": "https://media.pokipair.com/2026/09/11174128/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-166.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "energy-metal",
+    "number": 171,
+    "label": "Basis-Energie",
+    "name": "Basic Metal Energy",
+    "rarity": "Common",
+    "image": "assets/cards/energy-metal.webp",
+    "source": "https://media.pokipair.com/2026/09/11174132/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-167.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "energy-psychic",
+    "number": 172,
+    "label": "Basis-Energie",
+    "name": "Basic Psychic Energy",
+    "rarity": "Common",
+    "image": "assets/cards/energy-psychic.webp",
+    "source": "https://media.pokipair.com/2026/09/11174137/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-168.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  },
+  {
+    "id": "energy-water",
+    "number": 173,
+    "label": "Basis-Energie",
+    "name": "Basic Water Energy",
+    "rarity": "Common",
+    "image": "assets/cards/energy-water.webp",
+    "source": "https://media.pokipair.com/2026/09/11174142/30th-Celebration-30THC-Simplified-Chinese-Pokemon-TCG-PokiPair-Store-Ireland-169.png",
+    "source_page": "https://www.pokipair.com/30th-anniversary-30thc-card-list/",
+    "dimensions": [
+      350,
+      482
+    ],
+    "booster_slot": false,
+    "verification": "simplified-chinese-source; individual-HD-review-pending"
+  }
+]
