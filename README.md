@@ -20,7 +20,7 @@ Dunkle, responsive Kartenübersicht für **30th Celebration / 30th C auf vereinf
 2. `supabase/schema.sql` einmal im neuen Projekt ausführen. Das bestehende Projekt wird nicht verändert.
 3. In Auth: E-Mail-Anmeldung aktivieren, E-Mail-Bestätigung aktivieren, anonyme Anmeldung deaktivieren. Site URL und zulässige Redirect URL auf `https://Furfural0405.github.io/pokemon-pullrates/` setzen (bei anderer Domain entsprechend anpassen).
 4. URL und **publishable key** in `config.js` eintragen. Niemals `service_role` oder einen Secret Key im Frontend verwenden.
-5. Eigentümer registriert sich mit seiner bestätigten Admin-E-Mail und bestätigt diese. Danach das Konto gezielt im SQL Editor zum Admin ernennen. Die erste beliebige Registrierung wird ausdrücklich **nicht** automatisch Admin.
+5. Eigentümer registriert sich mit seiner bestätigten Admin-E-Mail und bestätigt diese. Die bestätigte Eigentümer-E-Mail wird bei der Einrichtung im privaten Schema konfiguriert; nach E-Mail-Bestätigung erhält nur dieses Konto automatisch Admin-Rechte. Bei manueller Einrichtung das Konto gezielt im SQL Editor zum Admin ernennen. Die erste beliebige Registrierung wird ausdrücklich **nicht** automatisch Admin.
 
 ```sql
 -- Nur nach Prüfung und mit der ausdrücklich bestätigten Eigentümer-E-Mail.
@@ -72,7 +72,7 @@ Inoffizielles Fanprojekt. Pokémon und Kartenabbildungen gehören ihren jeweilig
 
 ## Noch offen vor Live-Betrieb
 
-- Repository erstellen, hochladen und GitHub Pages aktivieren.
+- GitHub-Veröffentlichung abschließen und den veröffentlichten Build prüfen.
 - Supabase-Organisation und Kosten bestätigen; Projekt erstellen, SQL einspielen und Auth konfigurieren.
-- Konkrete Admin-E-Mail bestätigen und das entsprechende verifizierte Konto zuordnen.
-- Vollständiger Browser-Funktionstest und Live-Realtime-Test nach Verbindung des Projekts. In der aktuellen Umgebung war kein unterstützter Browser-QA-Zugang verfügbar; lokaler Build und PostgreSQL-Sicherheitstests bestanden.
+- Bestätigte Admin-E-Mail im neuen privaten Schema konfigurieren und das verifizierte Konto zuordnen.
+- Vollständiger Browser-Funktionstest und Live-Realtime-Test nach Verbindung des Projekts. Lokaler Build und PostgreSQL-Sicherheitstests bestanden; die Live-Integration erfordert das neue Supabase-Projekt.
