@@ -15,4 +15,4 @@ export function validateBackup(data,cards){
   const ids=new Set();for(const d of data.datasets){if(!/^[0-9a-f-]{36}$/i.test(d.user_id)||ids.has(d.user_id))throw Error('Ungültige oder doppelte Nutzer-ID.');ids.add(d.user_id);validateCounts(d.counts,cards);if(d.snapshot!==null)validateCounts(d.snapshot,cards)}
  }else throw Error('Unbekannter Backup-Typ.');return data;
 }
-export function showRate(value){return value==null?'Noch keine Pullrate':`1 / ${new Intl.NumberFormat('de-DE',{maximumFractionDigits:2}).format(value)}`}
+export function showRate(value){if(value==null||!Number.isFinite(value)||value<=0)return 'Noch keine Pullrate';const f=new Intl.NumberFormat('de-DE',{maximumFractionDigits:2});return `1 / ${f.format(value)} (${f.format(100/value)} %)`}
