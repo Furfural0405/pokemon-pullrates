@@ -1,0 +1,2 @@
+export const RARITIES=['Common','Rare','Double Rare','Pikachu Rare','Art Rare','Special Art Rare','Futuristic Rare','Reprint','RGB'];
+export function validateCardDetails(name,rarity){name=String(name??'').trim();if(!name||[...name].length>100)throw Error('Der Anzeigename muss 1 bis 100 Zeichen enthalten.');if(!RARITIES.includes(rarity))throw Error('Bitte eine gültige Seltenheit auswählen.');return {name,rarity}}
