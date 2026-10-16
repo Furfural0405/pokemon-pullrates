@@ -1,0 +1,54 @@
+begin;
+-- All test identities, lists and publication changes are rolled back.
+do $$ declare a uuid:=gen_random_uuid(); b uuid:=gen_random_uuid();begin
+ perform set_config('test.alice',a::text,true);perform set_config('test.bob',b::text,true);
+ insert into auth.users(id,email) values(a,'list-test-'||a||'@example.invalid'),(b,'list-test-'||b||'@example.invalid');
+end $$;
+set local role authenticated;
+do $$
+declare a uuid:=current_setting('test.alice')::uuid;b uuid:=current_setting('test.bob')::uuid;l jsonb;owned jsonb;v jsonb;name_a text:='TestA_'||left(replace(a::text,'-',''),12);name_b text:='TestB_'||left(replace(b::text,'-',''),12);baseline numeric;pv int;
+begin
+ perform set_config('request.jwt.claim.sub','e094b5d1-43f8-4342-b66b-6f76f8165c2d',true);
+ baseline:=(public.pull_app('public-counts')->>'boosters')::numeric;
+ perform set_config('request.jwt.claim.sub',a::text,true);
+ perform public.pull_lists('username',jsonb_build_object('username',name_a));
+ l:=public.pull_lists('me')->'lists'->0;
+ l:=public.pull_lists('save',jsonb_build_object('list_id',l->>'id','version',l->'version','counts','{"017":3,"058":1}'::jsonb));
+ assert public.pull_lists('me')->'lists'->0->'counts'='{"017":3,"058":1}'::jsonb,'PRIVATE_SAVE_RELOAD';
+ begin perform public.pull_lists('search');raise exception 'TEST_FAILURE';exception when others then if sqlerrm<>'SEARCH_REQUIRES_APPROVAL_AND_USERNAME' then raise;end if;end;
+ begin perform public.pull_lists('settings',l||jsonb_build_object('list_id',l->>'id','visibility','public'));raise exception 'TEST_FAILURE';exception when others then if sqlerrm<>'PUBLIC_REQUIRES_APPROVAL_AND_USERNAME' then raise;end if;end;
+ pv:=(public.pull_app('me')->>'version')::int;
+ perform set_config('request.jwt.claim.sub','e094b5d1-43f8-4342-b66b-6f76f8165c2d',true);
+ perform public.pull_app('approve',jsonb_build_object('user_id',a,'version',pv));
+ perform public.pull_app('approve',jsonb_build_object('user_id',b,'version',0));
+ perform set_config('request.jwt.claim.sub',a::text,true);
+ l:=public.pull_lists('settings',l||jsonb_build_object('list_id',l->>'id','visibility','public','display','rates_only'));
+ perform set_config('request.jwt.claim.sub',b::text,true);
+ begin perform public.pull_lists('view',jsonb_build_object('list_id',l->>'id'));raise exception 'TEST_FAILURE';exception when others then if sqlerrm<>'LIST_NOT_FOUND' then raise;end if;end;
+ perform public.pull_lists('username',jsonb_build_object('username',name_b));
+ v:=public.pull_lists('view',jsonb_build_object('list_id',l->>'id'));
+ assert v->'counts'='null'::jsonb and v->'boosters'='null'::jsonb and (v->'rates'->>'058')::numeric=3,'REDACTION';
+ assert position('@' in v::text)=0,'NO_EMAIL_LEAK';
+ assert jsonb_array_length(public.pull_lists('search',jsonb_build_object('query',name_a)))=1,'SEARCH';
+ begin perform public.pull_lists('save',jsonb_build_object('list_id',l->>'id','version',l->'version','counts','{}'::jsonb));raise exception 'TEST_FAILURE';exception when others then if sqlerrm<>'NOT_OWNER' then raise;end if;end;
+ begin perform public.pull_lists('username',jsonb_build_object('username',lower(name_a)));raise exception 'TEST_FAILURE';exception when others then if sqlerrm<>'USERNAME_TAKEN' then raise;end if;end;
+ begin perform public.pull_lists('username','{"username":"H3il_H1tler"}');raise exception 'TEST_FAILURE';exception when others then if sqlerrm<>'USERNAME_BLOCKED' then raise;end if;end;
+ perform set_config('request.jwt.claim.sub',a::text,true);
+ for pv in 1..9 loop perform public.pull_lists('create',jsonb_build_object('name','Probe '||pv,'purpose',case when pv=9 then 'trade' else 'pulls' end));end loop;
+ begin perform public.pull_lists('create','{"name":"Eleven"}');raise exception 'TEST_FAILURE';exception when others then if sqlerrm<>'LIST_LIMIT' then raise;end if;end;
+ owned:=public.pull_lists('me')->'lists';
+ perform set_config('request.jwt.claim.sub','e094b5d1-43f8-4342-b66b-6f76f8165c2d',true);
+ v:=public.pull_lists('view',jsonb_build_object('list_id',l->>'id'));assert (v->>'boosters')::numeric=3 and v->'counts'<>'null'::jsonb,'ADMIN_OVERRIDE';
+ perform public.pull_lists('include',jsonb_build_object('list_id',l->>'id','version',l->'version'));
+ assert (public.pull_app('public-counts')->>'boosters')::numeric=baseline+3,'INDIVIDUAL_PUBLICATION';
+ select value into v from jsonb_array_elements(owned) where value->>'purpose'='trade';
+ begin perform public.pull_lists('include',jsonb_build_object('list_id',v->>'id','version',v->'version'));raise exception 'TEST_FAILURE';exception when others then if sqlerrm<>'NOT_ELIGIBLE' then raise;end if;end;
+ perform public.pull_lists('moderate-name',jsonb_build_object('user_id',a,'username',null,'blocked',true));
+ perform set_config('request.jwt.claim.sub',b::text,true);
+ assert jsonb_array_length(public.pull_lists('search',jsonb_build_object('query',name_a)))=0,'MODERATION_HIDES_LISTS';
+ begin perform public.pull_lists('view',jsonb_build_object('list_id',l->>'id'));raise exception 'TEST_FAILURE';exception when others then if sqlerrm<>'LIST_NOT_FOUND' then raise;end if;end;
+ begin perform count(*) from pull_private.lists;raise exception 'TEST_FAILURE';exception when insufficient_privilege then null;end;
+ assert not has_function_privilege('anon','public.pull_lists(text,jsonb)','execute'),'ANONYMOUS_DENIED';
+end $$;
+select true as authenticated_api_tests_passed;
+rollback;
