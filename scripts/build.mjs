@@ -6,3 +6,4 @@ await cp('assets','dist/assets',{recursive:true});
 await build({entryPoints:['app.js'],bundle:true,format:'esm',minify:true,outfile:'dist/app.js',target:['es2022']});
 await writeFile('dist/.nojekyll','');
 console.log('Static build ready in dist/');
+
