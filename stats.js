@@ -8,8 +8,9 @@ export function validateCounts(counts,cards){
  return counts;
 }
 export function validateBackup(data,cards){
- if(!data||data.format!==FORMAT||data.schema_version!==1||data.set!=='30thC-zh-Hans')throw Error('Kein kompatibles Backup für dieses Set.');
+ if(!data||data.format!==FORMAT||![1,2].includes(data.schema_version)||data.set!=='30thC-zh-Hans')throw Error('Kein kompatibles Backup für dieses Set.');
  if(data.scope==='own')validateCounts(data.counts,cards);
+ else if(data.scope==='all'&&data.schema_version===2){if(!Array.isArray(data.lists)||data.lists.length>10000)throw Error('Ungültige Listen.');const ids=new Set();for(const l of data.lists){if(!/^[0-9a-f-]{36}$/i.test(l.id)||ids.has(l.id))throw Error('Ungültige oder doppelte Listen-ID.');ids.add(l.id);validateCounts(l.counts,cards);if(l.snapshot!==null)validateCounts(l.snapshot,cards)}}
  else if(data.scope==='all'){
   if(!Array.isArray(data.datasets)||data.datasets.length>10000)throw Error('Ungültige Datensätze.');
   const ids=new Set();for(const d of data.datasets){if(!/^[0-9a-f-]{36}$/i.test(d.user_id)||ids.has(d.user_id))throw Error('Ungültige oder doppelte Nutzer-ID.');ids.add(d.user_id);validateCounts(d.counts,cards);if(d.snapshot!==null)validateCounts(d.snapshot,cards)}

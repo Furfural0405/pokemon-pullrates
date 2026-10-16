@@ -3,3 +3,6 @@
 @media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
 
 table{border-collapse:collapse;width:100%;font-size:12px}th,td{text-align:left;padding:8px;border-bottom:1px solid var(--border)}th{color:var(--muted)}
+
+
+.list-controls{flex-basis:100%;display:grid;gap:1rem}.list-controls form{display:grid;gap:.8rem;max-width:42rem}.list-controls summary{cursor:pointer;padding:.5rem 0}.list-table{overflow:auto;max-height:65vh;width:100%}.list-table table{width:100%;border-collapse:collapse}.list-table th,.list-table td{text-align:left;padding:.7rem;border-bottom:1px solid #343843}#account-panel form,#directory-search{display:flex;flex-wrap:wrap;align-items:end;gap:1rem}#account-panel p{flex-basis:100%}#foreign-list{display:block}#admin-lists .user-row{flex-wrap:wrap}input[type=checkbox]{width:auto}
