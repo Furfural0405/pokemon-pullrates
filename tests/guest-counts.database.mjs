@@ -1,0 +1,38 @@
+import {PGlite} from '@electric-sql/pglite';
+import {readFile} from 'node:fs/promises';
+import assert from 'node:assert/strict';
+const db=new PGlite();
+await db.exec(`create role anon;create role authenticated;create schema auth;create schema pull_private;
+create function auth.uid() returns uuid language sql as $$select nullif(current_setting('request.jwt.claim.sub',true),'')::uuid$$;
+create table auth.users(id uuid primary key,email text,raw_user_meta_data jsonb default '{}');
+create table pull_private.profiles(id uuid primary key references auth.users(id),email text,status text default 'pending',role text default 'user',counts jsonb default '{}',version int default 0,snapshot jsonb,snapshot_version int,updated_at timestamptz default now(),request_archived boolean default false);
+create table pull_private.settings(id boolean primary key,admin_email text,show_public_counts boolean default false);
+insert into pull_private.settings values(true,'owner@example.invalid',false);
+create table pull_private.cards(id text primary key,booster_slot boolean);
+create table pull_private.history(actor uuid,target uuid,action text,previous_state jsonb);
+create table public.pull_rates(id int primary key,rates jsonb,updated_at timestamptz default now());
+insert into public.pull_rates(id,rates) values(1,'{}');`);
+const cards=JSON.parse(await readFile('cards.json','utf8'));
+for(const c of cards)await db.query('insert into pull_private.cards values($1,$2)',[c.id,c.booster_slot]);
+for(const f of JSON.parse(await readFile('tests/baseline-functions.json','utf8')))await db.exec(f.definition);
+await db.exec(`create function public.pull_app(operation text,payload jsonb default '{}') returns jsonb language sql as $$select pull_private.application(operation,payload)$$;
+create trigger register_user after insert on auth.users for each row execute function pull_private.register_user();
+insert into auth.users(id,email) values('e094b5d1-43f8-4342-b66b-6f76f8165c2d','owner@example.invalid');
+update pull_private.profiles set role='admin',status='approved',counts='{"017":10,"058":2}',version=4;
+select pull_private.refresh_rates();`);
+const before=(await db.query('select counts,version,snapshot from pull_private.profiles')).rows;
+const ratesBefore=(await db.query('select rates from public.pull_rates')).rows;
+await db.exec(await readFile('supabase/multiple-lists.sql','utf8'));
+assert.deepEqual((await db.query('select counts,version,snapshot from pull_private.profiles')).rows,before);
+await db.exec('select pull_private.refresh_rates()');
+assert.deepEqual((await db.query('select rates from public.pull_rates')).rows,ratesBefore);
+await db.exec(`create table public.card_details(card_id text primary key,rarity text);`);
+await db.exec(await readFile('supabase/rarity-catalog.sql','utf8'));await db.exec(await readFile('supabase/rarity-statistics.sql','utf8'));
+await db.exec(await readFile('supabase/guest-community-counts.sql','utf8'));
+async function counts(){return(await db.query('select public.pull_community_counts() value')).rows[0].value}
+async function rarity(){return(await db.query('select public.pull_rarity_stats() value')).rows[0].value}
+await db.exec('set role anon');assert.equal((await counts()).counts,null);assert.ok(!Object.hasOwn((await rarity()).classes['Pikachu Rare'],'count'));await assert.rejects(()=>db.query("select public.pull_lists('me')"));await db.exec('reset role');
+await db.exec('update pull_private.settings set show_public_counts=true');await db.exec('set role anon');assert.equal((await counts()).boosters,10);assert.equal((await counts()).counts['017'],10);assert.ok(Object.hasOwn((await rarity()).classes['Pikachu Rare'],'count'));await assert.rejects(()=>db.query('select * from pull_private.lists'));await db.exec('reset role');
+await db.exec('update pull_private.settings set show_public_counts=false');await db.exec('set role anon');assert.equal((await counts()).boosters,null);await db.exec('reset role');
+await db.query("select set_config('request.jwt.claim.sub','e094b5d1-43f8-4342-b66b-6f76f8165c2d',false)");assert.equal((await counts()).boosters,10);
+console.log('Guest count visibility passed: enabled/disabled, rarity quantities, admin override, private list denial.');await db.close();

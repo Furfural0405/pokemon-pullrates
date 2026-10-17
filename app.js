@@ -53,7 +53,7 @@ function render(){const approved=profile?.status==='approved',ownAllowed=user&&p
  $$('[data-view]').forEach(b=>b.classList.toggle('active',b.dataset.view===view));
  renderListControls();if(view==='admin'){renderUsers();chat.renderConsentSummaries();}else if(!['directory','chat'].includes(view))renderGrid();updateEditor();
 }
-async function refreshCommunityStats(){const viewer=user?.id,data=user?await rpc('public-counts'):{enabled:false,counts:null,boosters:null};if(user?.id!==viewer)return;communityStats=data;$('#count-visibility').checked=communityStats.enabled===true}
+async function refreshCommunityStats(){const viewer=user?.id;const {data,error}=await client.rpc('pull_community_counts');if(error)throw error;if(user?.id!==viewer)return;communityStats=data;$('#count-visibility').checked=communityStats.enabled===true}
 async function refreshPublic(){if(!client)return;const {data,error}=await client.from('pull_rates').select('rates,updated_at').eq('id',1).single();if(error)throw error;publicRates=data.rates;publicLoaded=true;await refreshCommunityStats();await refreshImages();await refreshCardDetails();if(view==='public')renderGrid()}
 async function refreshProfile(){if(!client||!user)return;const p=await listsRpc('me');
  if(profile?.id&&profile.id!==p.id){dirty=false;selectedList=null;counts={};}
