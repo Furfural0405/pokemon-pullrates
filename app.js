@@ -1,3 +1,4 @@
+import {mountInfos} from './infos.js';
 import {trackedPreviewHtml,incrementalTradeQuantity} from './trade-transfer.js';
 import {rarityStatistics,showRarityRate,raritySummaryHtml,withoutRarityCounts} from './rarity-stats.js';
 import {createChat} from './chat/ui.js';
@@ -19,7 +20,7 @@ const imageFor=c=>imageOverrides[c.id]??c.image;
 function clearImagePreview(){if(pendingImageUrl)URL.revokeObjectURL(pendingImageUrl);pendingImageUrl=null;pendingImage=null;pendingCard=null}
 async function refreshImages(){const {data,error}=await client.from('card_images').select('card_id,path,updated_at');if(error)throw error;imageOverrides=Object.fromEntries(data.map(x=>[x.card_id,client.storage.from('card-images').getPublicUrl(x.path).data.publicUrl]));$$('[data-card-image]').forEach(el=>{const c=cards.find(c=>c.id===el.dataset.cardImage);if(c)el.src=imageFor(c)})}
 const originalDetails=new Map(cards.map(c=>[c.id,{name:c.name,rarity:c.rarity}]));
-async function refreshCardDetails(){const {data,error}=await client.from('card_details').select('card_id,name,rarity');if(error)throw error;const overrides=new Map(data.map(d=>[d.card_id,d]));for(const c of cards){const d=overrides.get(c.id)??originalDetails.get(c.id);c.name=d.name;c.rarity=d.rarity}await refreshRarityStats();if(!['admin','directory','chat'].includes(view)&&!dirty)renderGrid();else if(view==='own'&&dirty)updateRates()}
+async function refreshCardDetails(){const {data,error}=await client.from('card_details').select('card_id,name,rarity');if(error)throw error;const overrides=new Map(data.map(d=>[d.card_id,d]));for(const c of cards){const d=overrides.get(c.id)??originalDetails.get(c.id);c.name=d.name;c.rarity=d.rarity}await refreshRarityStats();if(!['admin','directory','chat','info'].includes(view)&&!dirty)renderGrid();else if(view==='own'&&dirty)updateRates()}
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const number=n=>new Intl.NumberFormat('de-DE').format(n);
 function toast(message,error=false){$('#toast').textContent=message;$('#toast').classList.toggle('error',error);$('#toast').hidden=false;clearTimeout(timer);timer=setTimeout(()=>$('#toast').hidden=true,6000)}
@@ -27,6 +28,7 @@ function friendly(e){const m=e.message??String(e);const messages={TRANSFER_PREVI
 async function rpc(operation,payload={}){const {data,error}=await client.rpc('pull_app',{operation,payload});if(error)throw error;return data}
 async function listsRpc(operation,payload={}){const {data,error}=await client.rpc('pull_lists',{operation,payload});if(error)throw error;return data}
 async function run(fn){if(busy)return;busy=true;$$('button').forEach(b=>b.disabled=true);try{await fn()}catch(e){toast(friendly(e),true)}finally{busy=false;$$('button').forEach(b=>b.disabled=false)}}
+mountInfos($('#info-panel'));
 const chat=createChat({getClient:()=>client,getUser:()=>user,getProfile:()=>profile,toast,esc,run});
 function updateEditor(){$('#own-booster-summary').hidden=selectedList?.purpose==='trade';const b=boosters(counts,cards);$('#own-boosters').textContent=number(b);$('#save-state').textContent=dirty?'Ungespeicherte Änderungen':'Gespeichert';$('#save-state').classList.toggle('unsaved',dirty)}
 function updateTransferToolbar(){$('#transfer-toolbar').hidden=view!=='own'||selectedList?.purpose!=='pulls';$('#transfer-selected-total').textContent=number(transferSelection.size)}
@@ -48,13 +50,13 @@ function renderListControls(){
 }
 function render(){const approved=profile?.status==='approved',ownAllowed=user&&profile&&profile.status!=='rejected';
  $('#chat-tab').hidden=!approved||!profile?.username||profile?.username_blocked;chat.sync({active:view==='chat',user});$('#own-tab').hidden=!ownAllowed;$('#directory-tab').hidden=!canSearchLists();$('#admin-tab').hidden=!approved||profile?.role!=='admin';
- $('#account-panel').hidden=!ownAllowed;$('#directory-panel').hidden=view!=='directory';
+ $('#info-panel').hidden=view!=='info';$('#account-panel').hidden=!ownAllowed||view==='info';$('#directory-panel').hidden=view!=='directory';
  $('#auth-button').textContent=user?'Abmelden':'Anmelden ↗';$('#account-notice').hidden=!user||approved;
  $('#account-notice').textContent=profile?.status==='rejected'?'Dein Zugang wurde nicht freigegeben. Du kannst die öffentliche Übersicht weiterhin ansehen.':'Dein Konto wartet auf die Freigabe. Private Listen kannst du bereits anlegen und speichern. Suche und Veröffentlichung sind erst nach Freigabe möglich.';
- $('#editor').hidden=view!=='own';$('#admin-panel').hidden=view!=='admin';$('#collection').hidden=['admin','directory','chat'].includes(view);
+ $('#editor').hidden=view!=='own';$('#admin-panel').hidden=view!=='admin';$('#collection').hidden=['admin','directory','chat','info'].includes(view);
  $('#view-description').textContent=view==='own'?(selectedList?.purpose==='trade'?'Deine Angebots-/Tauschliste. Hier werden keine Pullraten berechnet.':'Deine persönliche Pull-Liste. Änderungen werden erst beim Speichern übernommen.'):'Öffentliche Pullraten aus den übernommenen Listen.';
  $$('[data-view]').forEach(b=>b.classList.toggle('active',b.dataset.view===view));
- updateTransferToolbar();renderListControls();if(view==='admin'){renderUsers();chat.renderConsentSummaries();}else if(!['directory','chat'].includes(view))renderGrid();updateEditor();
+ updateTransferToolbar();renderListControls();if(view==='admin'){renderUsers();chat.renderConsentSummaries();}else if(!['directory','chat','info'].includes(view))renderGrid();updateEditor();
 }
 async function refreshCommunityStats(){const viewer=user?.id;const {data,error}=await client.rpc('pull_community_counts');if(error)throw error;if(user?.id!==viewer)return;communityStats=data;$('#count-visibility').checked=communityStats.enabled===true}
 async function refreshPublic(){if(!client)return;const {data,error}=await client.from('pull_rates').select('rates,updated_at').eq('id',1).single();if(error)throw error;publicRates=data.rates;publicLoaded=true;await refreshCommunityStats();await refreshImages();await refreshCardDetails();if(view==='public')renderGrid()}
