@@ -1,0 +1,61 @@
+import {PGlite} from '@electric-sql/pglite';
+import {readFile} from 'node:fs/promises';
+import assert from 'node:assert/strict';
+const db=new PGlite();
+await db.exec(`create role anon;create role authenticated;create schema auth;create schema pull_private;
+create function auth.uid() returns uuid language sql as $$select nullif(current_setting('request.jwt.claim.sub',true),'')::uuid$$;
+create table auth.users(id uuid primary key,email text,raw_user_meta_data jsonb default '{}');
+create table pull_private.profiles(id uuid primary key references auth.users(id),email text,status text default 'pending',role text default 'user',counts jsonb default '{}',version int default 0,snapshot jsonb,snapshot_version int,updated_at timestamptz default now(),request_archived boolean default false);
+create table pull_private.settings(id boolean primary key,admin_email text,show_public_counts boolean default false);
+insert into pull_private.settings values(true,'owner@example.invalid',false);
+create table pull_private.cards(id text primary key,booster_slot boolean);
+create table pull_private.history(actor uuid,target uuid,action text,previous_state jsonb);
+create table public.pull_rates(id int primary key,rates jsonb,updated_at timestamptz default now());
+insert into public.pull_rates(id,rates) values(1,'{}');`);
+const cards=JSON.parse(await readFile('cards.json','utf8'));
+for(const c of cards)await db.query('insert into pull_private.cards values($1,$2)',[c.id,c.booster_slot]);
+for(const f of JSON.parse(await readFile('tests/baseline-functions.json','utf8')))await db.exec(f.definition);
+await db.exec(`create function public.pull_app(operation text,payload jsonb default '{}') returns jsonb language sql as $$select pull_private.application(operation,payload)$$;
+create trigger register_user after insert on auth.users for each row execute function pull_private.register_user();
+insert into auth.users(id,email) values('e094b5d1-43f8-4342-b66b-6f76f8165c2d','owner@example.invalid');
+update pull_private.profiles set role='admin',status='approved',counts='{"017":10,"058":2}',version=4;
+select pull_private.refresh_rates();`);
+const before=(await db.query('select counts,version,snapshot from pull_private.profiles')).rows;
+const ratesBefore=(await db.query('select rates from public.pull_rates')).rows;
+await db.exec(await readFile('supabase/multiple-lists.sql','utf8'));
+assert.deepEqual((await db.query('select counts,version,snapshot from pull_private.profiles')).rows,before);
+await db.exec('select pull_private.refresh_rates()');
+assert.deepEqual((await db.query('select rates from public.pull_rates')).rows,ratesBefore);
+await db.exec(`create table public.card_details(card_id text primary key,rarity text);`);
+await db.exec(await readFile('supabase/rarity-catalog.sql','utf8'));await db.exec(await readFile('supabase/rarity-statistics.sql','utf8'));
+
+await db.exec(`create role service_role;create schema extensions;create function extensions.digest(text,text) returns bytea language sql as $$select convert_to($1,'UTF8')$$;create function auth.jwt() returns jsonb language sql as $$select jsonb_build_object('role',current_setting('request.jwt.claim.role',true))$$;`);
+const beforePrices=(await db.query('select counts,version,snapshot from pull_private.lists order by id')).rows;
+await db.exec(await readFile('supabase/cardmarket-values.sql','utf8'));
+assert.deepEqual((await db.query('select counts,version,snapshot from pull_private.lists order by id')).rows,beforePrices);
+const owner='e094b5d1-43f8-4342-b66b-6f76f8165c2d',a='aaaaaaaa-aaaa-4aaa-8aaa-aaaaaaaaaaaa',b='bbbbbbbb-bbbb-4bbb-8bbb-bbbbbbbbbbbb';
+await db.exec(`insert into auth.users(id,email,raw_user_meta_data) values('${a}','a@example.invalid','{"username":"Alice"}'),('${b}','b@example.invalid','{"username":"Bob"}');update pull_private.profiles set status='approved';insert into public.cardmarket_catalog values(908239,'Drifloon [Float Up]',10,15,now());`);
+async function as(id){await db.query("select set_config('request.jwt.claim.sub',$1,false)",[id])}
+async function rpc(op,p={}){return(await db.query('select public.pull_lists($1,$2::jsonb) value',[op,JSON.stringify(p)])).rows[0].value}
+async function link(p){return db.query('select public.pull_save_market_link($1::jsonb)',[JSON.stringify(p)])}
+const url='https://www.cardmarket.com/de/Pokemon/Products/Singles/30th-Celebration-Simplified-Chinese/Drifloon-V1-30thC061';
+await as(a);await assert.rejects(()=>link({card_id:'061',url,product_id:908239}));
+await as(owner);await link({card_id:'061',url,product_id:908239});
+await assert.rejects(()=>link({card_id:'061',url:'https://evil.example/test',product_id:908239}));
+await assert.rejects(()=>link({card_id:'061',url:url.replace('Drifloon','Pikachu'),product_id:908239}));
+await as(a);let l=(await rpc('me')).lists[0];l=await rpc('save',{list_id:l.id,version:l.version,counts:{'061':20,'062':3}});l=await rpc('settings',{...l,list_id:l.id,visibility:'public',display:'rates_only'});
+assert.equal(l.value_public,false);
+await as(b);let v=await rpc('view',{list_id:l.id});assert.equal(v.valuation,null);assert.equal(v.counts,null);
+await as(a);v=await rpc('view',{list_id:l.id});assert.equal(Number(v.valuation.total_eur),210);assert.equal(Number(v.valuation.unvalued_copies),3);
+l=await rpc('settings',{...l,list_id:l.id,value_public:true});await as(b);v=await rpc('view',{list_id:l.id});assert.equal(Number(v.valuation.total_eur),210);assert.equal(v.counts,null);assert.ok(!Object.hasOwn(v.valuation,'valued_copies'));assert.ok(!Object.hasOwn(v.valuation,'unvalued_copies'));assert.equal(v.valuation.incomplete,true);
+await as(a);l=await rpc('settings',{...l,list_id:l.id,value_public:false});await as(owner);assert.equal(Number((await rpc('view',{list_id:l.id})).valuation.total_eur),210);
+await as(a);let t=await rpc('create',{name:'Angebot',purpose:'trade'});t=await rpc('save',{list_id:t.id,version:t.version,counts:{'061':13}});assert.equal(Number((await rpc('view',{list_id:t.id})).valuation.total_eur),136.5);
+await db.exec('set role anon');await assert.rejects(()=>db.query('select * from public.cardmarket_catalog'));assert.equal((await db.query('select unit_eur from public.cardmarket_prices')).rows.length,1);await assert.rejects(()=>db.query("update public.cardmarket_prices set low=0"));await assert.rejects(()=>db.query("select public.pull_market_worker('claim','{}')"));await db.exec('reset role');
+await db.exec(`insert into pull_private.market_worker_state(id,token_hash) values(true,encode(extensions.digest('test-token','sha256'),'hex'));select set_config('request.jwt.claim.role','service_role',false);`);
+async function worker(operation,payload){return(await db.query('select public.pull_market_worker($1,$2::jsonb) value',[operation,JSON.stringify(payload)])).rows[0].value}
+await assert.rejects(()=>worker('claim',{token:'bad-token'}));assert.equal((await worker('claim',{token:'test-token'})).run,true);assert.equal((await worker('claim',{token:'test-token'})).run,false);
+await worker('fail',{token:'test-token',error:'Source unreachable'});assert.equal(Number((await db.query('select unit_eur from public.cardmarket_prices')).rows[0].unit_eur),10.5);
+await worker('finish',{token:'test-token',source_at:new Date().toISOString(),products:[{product_id:908239,name:'Drifloon [Float Up]',low:20,avg7:30}]});assert.equal(Number((await db.query('select unit_eur from public.cardmarket_prices')).rows[0].unit_eur),21);
+await worker('finish',{token:'test-token',source_at:new Date().toISOString(),products:[{product_id:908239,name:'Drifloon [Float Up]',low:null,avg7:30}]});assert.equal(Number((await db.query('select unit_eur from public.cardmarket_prices')).rows[0].unit_eur),21);
+await as(owner);await link({card_id:'061',url,product_id:null});assert.equal((await db.query('select unit_eur from public.cardmarket_prices')).rows[0].unit_eur,null);
+console.log('Pricing database tests passed.');await db.close();
