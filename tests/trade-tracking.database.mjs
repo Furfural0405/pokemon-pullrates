@@ -1,0 +1,41 @@
+import {PGlite} from '@electric-sql/pglite';
+import {readFile} from 'node:fs/promises';
+import assert from 'node:assert/strict';
+const db=new PGlite();
+await db.exec(`create role anon;create role authenticated;create schema auth;create schema pull_private;
+create function auth.uid() returns uuid language sql as $$select nullif(current_setting('request.jwt.claim.sub',true),'')::uuid$$;
+create table auth.users(id uuid primary key,email text,raw_user_meta_data jsonb default '{}');
+create table pull_private.profiles(id uuid primary key references auth.users(id),email text,status text default 'pending',role text default 'user',counts jsonb default '{}',version int default 0,snapshot jsonb,snapshot_version int,updated_at timestamptz default now(),request_archived boolean default false);
+create table pull_private.settings(id boolean primary key,admin_email text,show_public_counts boolean default false);
+insert into pull_private.settings values(true,'owner@example.invalid',false);
+create table pull_private.cards(id text primary key,booster_slot boolean);
+create table pull_private.history(actor uuid,target uuid,action text,previous_state jsonb);
+create table public.pull_rates(id int primary key,rates jsonb,updated_at timestamptz default now());
+insert into public.pull_rates(id,rates) values(1,'{}');`);
+const cards=JSON.parse(await readFile('cards.json','utf8'));
+for(const c of cards)await db.query('insert into pull_private.cards values($1,$2)',[c.id,c.booster_slot]);
+for(const f of JSON.parse(await readFile('tests/baseline-functions.json','utf8')))await db.exec(f.definition);
+await db.exec(`create function public.pull_app(operation text,payload jsonb default '{}') returns jsonb language sql as $$select pull_private.application(operation,payload)$$;
+create trigger register_user after insert on auth.users for each row execute function pull_private.register_user();
+insert into auth.users(id,email) values('e094b5d1-43f8-4342-b66b-6f76f8165c2d','owner@example.invalid');
+update pull_private.profiles set role='admin',status='approved',counts='{"017":10,"058":2}',version=4;
+select pull_private.refresh_rates();`);
+const before=(await db.query('select counts,version,snapshot from pull_private.profiles')).rows;
+const ratesBefore=(await db.query('select rates from public.pull_rates')).rows;
+await db.exec(await readFile('supabase/multiple-lists.sql','utf8'));
+assert.deepEqual((await db.query('select counts,version,snapshot from pull_private.profiles')).rows,before);
+await db.exec('select pull_private.refresh_rates()');
+assert.deepEqual((await db.query('select rates from public.pull_rates')).rows,ratesBefore);
+await db.exec(await readFile('supabase/copy-pulls-to-trade.sql','utf8'));await db.exec(await readFile('supabase/trade-transfer-tracking.sql','utf8'));
+const owner='e094b5d1-43f8-4342-b66b-6f76f8165c2d';await db.query("select set_config('request.jwt.claim.sub',$1,false)",[owner]);
+async function rpc(op,p={}){return(await db.query('select public.pull_lists($1,$2::jsonb) v',[op,JSON.stringify(p)])).rows[0].v}
+async function preview(source,target){return(await db.query('select public.pull_trade_preview($1::jsonb) v',[JSON.stringify({source_id:source.id,target_id:target.id,card_ids:['017']})])).rows[0].v}
+async function copy(p,n,confirm=false){return(await db.query('select public.pull_copy_to_trade($1::jsonb) v',[JSON.stringify({protocol:2,source_id:p.source_id,source_version:p.source_version,target_id:p.target_id,target_version:p.target_version,counts:{'017':n},expected_marks:{'017':p.cards['017'].mark_version},confirmations:{'017':confirm}})])).rows[0].v}
+let source=(await rpc('me')).lists[0];source=await rpc('save',{list_id:source.id,version:source.version,counts:{'017':20}});let target=await rpc('create',{name:'Verkauf',purpose:'trade'}),p=await preview(source,target);assert.equal(p.cards['017'].mode,'initial');target=await copy(p,16);
+assert.equal((await preview(source,target)).cards['017'].baseline,20);target=await rpc('save',{list_id:target.id,version:target.version,counts:{'017':13}});source=await rpc('save',{list_id:source.id,version:source.version,counts:{'017':25}});p=await preview(source,target);assert.equal(p.cards['017'].pull_count-p.cards['017'].baseline,5);assert.equal(p.cards['017'].offer_count,13);const beforeCopyStats=(await db.query('select rates from public.pull_rates')).rows;target=await copy(p,18);assert.equal(target.counts['017'],18);assert.deepEqual((await db.query('select rates from public.pull_rates')).rows,beforeCopyStats);
+p=await preview(source,target);assert.equal(p.cards['017'].baseline,25);target=await copy(p,18);assert.equal(target.counts['017'],18);await assert.rejects(()=>copy(p,23),/VERSION_CONFLICT/);assert.equal((await rpc('me')).lists.find(l=>l.id===source.id).counts['017'],25);
+const independent=await rpc('create',{name:'Weiteres Angebot',purpose:'trade'});assert.equal((await preview(source,independent)).cards['017'].mode,'initial');
+let existing=await rpc('create',{name:'Vorhandene Angebote',purpose:'trade'});existing=await rpc('save',{list_id:existing.id,version:existing.version,counts:{'017':13}});p=await preview(source,existing);assert.equal(p.cards['017'].mode,'baseline_required');await assert.rejects(()=>copy(p,13),/CONFIRMATION_REQUIRED/);existing=await copy(p,18,true);assert.equal(existing.counts['017'],18);
+source=await rpc('save',{list_id:source.id,version:source.version,counts:{'017':22}});p=await preview(source,target);assert.equal(p.cards['017'].mode,'decrease');await assert.rejects(()=>copy(p,18),/CONFIRMATION_REQUIRED/);target=await copy(p,18,true);assert.equal((await preview(source,target)).cards['017'].baseline,22);
+await assert.rejects(()=>db.query('select public.pull_copy_to_trade($1::jsonb)',[JSON.stringify({source_id:source.id,source_version:source.version,target_id:target.id,target_version:target.version,counts:{'017':18}})]),/TRANSFER_PREVIEW_REQUIRED/);
+console.log('Incremental transfer passed: 20→16, sale→13, 25 pulls→18, repeat no addition, stale rejection, baseline onboarding, decrease confirmation, legacy-client protection.');await db.close();
