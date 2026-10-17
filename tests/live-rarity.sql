@@ -1,0 +1,32 @@
+begin;
+do $$declare a uuid:=gen_random_uuid();b uuid:=gen_random_uuid();begin
+ perform set_config('test.rarity.a',a::text,true);perform set_config('test.rarity.b',b::text,true);
+ insert into auth.users(id,email,raw_user_meta_data) values(a,'rarity-'||a||'@example.invalid',jsonb_build_object('username','ProbeA_'||left(a::text,8))),(b,'rarity-'||b||'@example.invalid',jsonb_build_object('username','ProbeB_'||left(b::text,8)));
+ update pull_private.profiles set status='approved' where id in(a,b);
+ insert into public.card_details(card_id,name,rarity) values('058','Test','Art Rare'),('059','Test','Art Rare') on conflict(card_id) do update set rarity=excluded.rarity;
+end $$;
+set local role authenticated;
+do $$declare a uuid:=current_setting('test.rarity.a')::uuid;b uuid:=current_setting('test.rarity.b')::uuid;l jsonb;v jsonb;begin
+ perform set_config('request.jwt.claim.sub',a::text,true);l:=public.pull_lists('me')->'lists'->0;
+ l:=public.pull_lists('save',jsonb_build_object('list_id',l->>'id','version',l->'version','counts','{"017":1000,"058":5,"059":95}'::jsonb));
+ l:=public.pull_lists('settings',l||jsonb_build_object('list_id',l->>'id','visibility','public','display','rates_only'));
+ perform set_config('request.jwt.claim.sub',b::text,true);v:=public.pull_lists('view',jsonb_build_object('list_id',l->>'id'));
+ assert v->'counts'='null'::jsonb and v->'boosters'='null'::jsonb,'HIDDEN_TOTALS';
+ assert not(v->'rarity_stats'->'classes'->'Art Rare' ? 'count'),'HIDDEN_CLASS_COUNTS';
+ assert (v->'rarity_stats'->'classes'->'Art Rare'->>'rate')::numeric=10,'CLASS_BOOSTER_RATE';
+ assert (v->'rarity_stats'->'within'->'058'->>'rate')::numeric=20,'WITHIN_CLASS_RATE';
+ perform set_config('request.jwt.claim.sub',a::text,true);l:=public.pull_lists('settings',l||jsonb_build_object('list_id',l->>'id','display','hide_boosters'));
+ perform set_config('request.jwt.claim.sub',b::text,true);v:=public.pull_lists('view',jsonb_build_object('list_id',l->>'id'));
+ assert v->'boosters'='null'::jsonb and (v->'rarity_stats'->'classes'->'Art Rare'->>'count')::numeric=100,'HIDE_ONLY_BOOSTERS';
+ perform set_config('request.jwt.claim.sub','e094b5d1-43f8-4342-b66b-6f76f8165c2d',true);
+ v:=public.pull_lists('view',jsonb_build_object('list_id',l->>'id'));assert (v->>'boosters')::numeric=1000,'ADMIN_OVERRIDE';
+ perform public.pull_app('set-count-visibility','{"enabled":false}');
+ perform set_config('request.jwt.claim.sub',b::text,true);
+ v:=public.pull_rarity_stats();assert not(v->'classes'->'Art Rare' ? 'count'),'PUBLIC_HIDDEN_COUNTS';
+ begin perform count(*) from pull_private.card_rarities;raise exception 'TEST_FAILURE';exception when insufficient_privilege then null;end;
+end $$;
+select set_config('request.jwt.claim.sub','',true);
+set local role anon;
+do $$declare v jsonb;begin v:=public.pull_rarity_stats();assert v ? 'classes' and v ? 'within','ANON_RATES';assert not(v->'classes'->'Art Rare' ? 'count'),'ANON_QUANTITIES';end $$;
+select true as rarity_visibility_and_calculation_checks_passed;
+rollback;
