@@ -1,0 +1,2 @@
+export function suggestedTradeQuantity(n){return Math.max(0,n-4)}
+export function transferPreviewHtml(cards,sourceCounts,selectedIds,esc){return cards.filter(c=>selectedIds.has(c.id)&&sourceCounts[c.id]>0).map(c=>`<tr><td>${esc(c.label)} ${esc(c.name)}</td><td>${sourceCounts[c.id]}</td><td data-transfer-existing="${c.id}">0</td><td><input type="number" data-transfer-count="${c.id}" min="0" max="1000000" step="1" required value="${suggestedTradeQuantity(sourceCounts[c.id])}" aria-label="Angebotsanzahl ${esc(c.name)} ${esc(c.label)}"></td></tr>`).join('')}

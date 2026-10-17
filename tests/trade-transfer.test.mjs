@@ -1,0 +1,3 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {suggestedTradeQuantity,transferPreviewHtml} from '../trade-transfer.js';
+test('trade proposal preserves four copies and clamps at zero',()=>{assert.equal(suggestedTradeQuantity(10),6);assert.equal(suggestedTradeQuantity(4),0);assert.equal(suggestedTradeQuantity(2),0);assert.equal(suggestedTradeQuantity(0),0)});
+test('preview contains only selected owned cards with independently editable suggested quantities',()=>{const cards=[{id:'a',name:'Mew',label:'001'},{id:'b',name:'Pikachu',label:'017'}],source={a:10,b:5};const html=transferPreviewHtml(cards,source,new Set(['a']),String);assert.ok(html.includes('value="6"'));assert.ok(!html.includes('Pikachu'));assert.equal(source.a,10)});
