@@ -21,3 +21,24 @@ table{border-collapse:collapse;width:100%;font-size:12px}th,td{text-align:left;p
 
 
 .stock-panel{padding:24px;border:1px solid #40506a;border-radius:18px;margin:24px 0}.stock-set-controls{display:flex;gap:14px;flex-wrap:wrap;align-items:end}.stock-set-controls p{flex-basis:100%}.stock-set-controls label{display:grid;gap:6px}.stock-fields{display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:14px 0}.stock-fields label,.stock-readonly{display:flex;flex-direction:column;gap:5px;font-size:.8rem}.stock-fields input{width:100%;min-width:0;padding:9px}.stock-readonly strong{font-size:1.2rem;padding:8px 0}.negative{color:#f87171}.missing-stock-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(125px,1fr));gap:16px;max-width:800px}.missing-stock-cards figure{margin:0}.missing-stock-cards img{width:100%;max-width:170px;height:210px;object-fit:contain}.missing-stock-cards figcaption{font-size:.85rem;padding:6px 0}#stock-dialog{max-width:min(900px,95vw);max-height:90vh;overflow:auto}.stock-panel[hidden]{display:none}
+
+
+/* Compact card layout and a single aligned column for stock values. */
+.grid{align-items:start}
+.card{padding:10px}
+.card-image{height:auto;line-height:0}
+.card-image img{height:auto;width:100%;aspect-ratio:auto;object-fit:contain}
+.card-top{margin-top:7px}
+.card h3{margin-top:3px}
+.card .card-market-price{min-height:0;padding:6px 8px;margin-bottom:7px;border-radius:8px;font-size:12px;line-height:1.35}
+.card .card-market-price small{font-size:10px;line-height:1.4;margin-top:3px;overflow-wrap:anywhere}
+.card .stock-fields{display:flex;flex-direction:column;gap:4px;padding:8px 0 4px}
+.card .stock-fields label,.card .stock-readonly{display:grid;grid-template-columns:minmax(0,1fr) 72px;align-items:center;gap:6px;min-height:36px;margin:0;font-size:11px;line-height:1.3;overflow-wrap:anywhere}
+.card .stock-fields input,.card .stock-readonly strong{box-sizing:border-box;width:72px;min-width:0;height:32px;margin:0;padding:5px 7px;border:1px solid var(--border);border-radius:5px;background:#101217;color:var(--text);font:600 12px/20px system-ui,sans-serif;font-variant-numeric:tabular-nums;text-align:right}
+.card .stock-fields input{appearance:textfield;-moz-appearance:textfield}
+.card .stock-fields input::-webkit-inner-spin-button,.card .stock-fields input::-webkit-outer-spin-button{-webkit-appearance:none;margin:0}
+.card .stock-readonly strong{display:block;background:transparent;border-color:transparent}
+.card .stock-readonly strong.negative{color:#f87171}
+.card .pull-rate{margin-top:6px;padding-top:7px}
+.card .within-rarity{margin-top:5px;padding:0}
+@media(max-width:470px){.card{padding:8px}.card .stock-fields label,.card .stock-readonly{grid-template-columns:minmax(0,1fr) 64px;gap:5px}.card .stock-fields input,.card .stock-readonly strong{width:64px}}
