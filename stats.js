@@ -8,8 +8,8 @@ export function validateCounts(counts,cards){
  return counts;
 }
 export function validateBackup(data,cards){
- if(!data||data.format!==FORMAT||![1,2].includes(data.schema_version)||data.set!=='30thC-zh-Hans')throw Error('Kein kompatibles Backup für dieses Set.');
- if(data.scope==='own')validateCounts(data.counts,cards);
+ if(!data||data.format!==FORMAT||![1,2,3].includes(data.schema_version)||data.set!=='30thC-zh-Hans')throw Error('Kein kompatibles Backup für dieses Set.');
+ if(data.scope==='own'){validateCounts(data.counts,cards);if(data.schema_version===3){if(data.purpose!=='pulls'||!data.inventory)throw Error('Ungültiges Bestandsbackup.');validateCounts(data.new_pulls,cards);for(const f of ['master','binder','given'])validateCounts(data.inventory[f],cards);}}
  else if(data.scope==='all'&&data.schema_version===2){if(!Array.isArray(data.lists)||data.lists.length>10000)throw Error('Ungültige Listen.');const ids=new Set();for(const l of data.lists){if(!/^[0-9a-f-]{36}$/i.test(l.id)||ids.has(l.id))throw Error('Ungültige oder doppelte Listen-ID.');ids.add(l.id);validateCounts(l.counts,cards);if(l.snapshot!==null)validateCounts(l.snapshot,cards)}}
  else if(data.scope==='all'){
   if(!Array.isArray(data.datasets)||data.datasets.length>10000)throw Error('Ungültige Datensätze.');
