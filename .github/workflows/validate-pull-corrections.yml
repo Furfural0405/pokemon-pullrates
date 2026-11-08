@@ -1,7 +1,5 @@
 name: Validate pull corrections
 on:
-  push:
-    branches: [feature/negative-pull-corrections-20261108]
   pull_request:
     branches: [main]
 permissions:
