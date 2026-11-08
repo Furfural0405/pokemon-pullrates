@@ -1,5 +1,5 @@
--- Signed corrections are accepted only for 'new_pulls'; all final counts and allocations stay nonnegative.
--- Existing rows, snapshots and statistics are not modified by this migration.
+-- Signed corrections apply only to pending new_pulls; all final totals and allocations remain nonnegative.
+-- Existing counts and snapshots are unchanged.
 create or replace function pull_private.validate_pull_deltas(payload jsonb) returns void language plpgsql security invoker set search_path='' as $$
 declare item record;
 begin
