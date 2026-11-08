@@ -46,6 +46,10 @@ const ratesBeforeStock=(await db.query('select rates from public.pull_rates')).r
 d=await save(d,{given:{'061':3}});assert.equal(d.available['061'],13);assert.deepEqual((await db.query('select rates from public.pull_rates')).rows,ratesBeforeStock);
 const payload={list_id:list.id,version:d.list.version,revision:d.revision,counts:d.list.counts,new_pulls:{'061':5},master:d.master,binder:d.binder,given:d.given,request_id:'22222222-2222-4222-8222-222222222222'};
 d=await inv('save',payload);assert.equal(d.list.counts['061'],25);assert.equal(d.available['061'],18);await inv('save',payload);assert.equal((await inv('get',{list_id:list.id})).list.counts['061'],25);await assert.rejects(()=>inv('save',{...payload,new_pulls:{'061':6}}),/REQUEST_REUSED/);
+const correction={list_id:list.id,version:d.list.version,revision:d.revision,counts:d.list.counts,new_pulls:{'061':-5},master:d.master,binder:d.binder,given:d.given,request_id:'33333333-3333-4333-8333-333333333333'};
+d=await inv('save',correction);assert.equal(d.list.counts['061'],20);assert.equal(d.available['061'],13);await inv('save',correction);assert.equal((await inv('get',{list_id:list.id})).list.counts['061'],20);
+await assert.rejects(()=>save(d,{new_pulls:{'061':-14}}),/STOCK_EXCEEDS_TOTAL/);await assert.rejects(()=>save(d,{new_pulls:{'061':-21}}),/INVALID_COUNTS/);await assert.rejects(()=>save(d,{new_pulls:{'061':-1000001}}),/INVALID_PULL_DELTAS/);assert.equal((await inv('get',{list_id:list.id})).list.counts['061'],20);
+d=await save(d,{new_pulls:{'061':5}});assert.equal(d.list.counts['061'],25);assert.equal(d.available['061'],18);
 await assert.rejects(()=>save(d,{binder:{'061':19}}),/STOCK_EXCEEDS_TOTAL/);assert.equal((await inv('get',{list_id:list.id})).available['061'],18);
 await assert.rejects(()=>save(d,{new_pulls:{'061':1000000}}));
 let trade=await rpc('create',{name:'Angebot',purpose:'trade'});trade=await rpc('save',{list_id:trade.id,version:trade.version,counts:{'061':13,'062':7}});

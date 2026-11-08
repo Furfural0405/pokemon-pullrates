@@ -19,6 +19,16 @@ $$;
 create function pull_private.stock_sets(bound jsonb) returns integer language sql stable security invoker set search_path='' as $$
  select coalesce(min(coalesce((bound->>id)::int,0)),0) from pull_private.cards where id not in ('mew-rgb-r','mew-rgb-g','mew-rgb-b');
 $$;
+create function pull_private.validate_pull_deltas(payload jsonb) returns void language plpgsql security invoker set search_path='' as $$
+declare item record;
+begin
+ if payload is null or jsonb_typeof(payload)<>'object' then raise exception 'INVALID_PULL_DELTAS: Kartenwerte müssen ein Objekt sein';end if;
+ if pg_column_size(payload)>100000 then raise exception 'INVALID_PULL_DELTAS: Eingabe zu groß';end if;
+ for item in select * from jsonb_each(payload) loop
+  if not exists(select 1 from pull_private.cards where id=item.key) or jsonb_typeof(item.value)<>'number' or item.value::text !~ '^-?[0-9]+$' then raise exception 'INVALID_PULL_DELTAS: Unbekannte Karte oder ungültige Korrektur';end if;
+  if abs((item.value::text)::numeric)>1000000 then raise exception 'INVALID_PULL_DELTAS: Maximal +/- 1.000.000 je Karte';end if;
+ end loop;
+end $$;
 create function pull_private.validate_stock(totals jsonb,m jsonb,b jsonb,g jsonb) returns void language plpgsql security invoker set search_path='' as $$
 begin
  perform pull_private.validate_counts(totals);perform pull_private.validate_counts(m);perform pull_private.validate_counts(b);perform pull_private.validate_counts(g);
@@ -61,7 +71,7 @@ begin
  if l.version is distinct from (payload->>'version')::int or coalesce(i.revision,0) is distinct from (payload->>'revision')::int then raise exception 'VERSION_CONFLICT';end if;
  previous_binder:=pull_private.stock_sets(b);
  if operation='save' then
-  perform pull_private.validate_counts(payload->'counts');perform pull_private.validate_counts(payload->'new_pulls');
+  perform pull_private.validate_counts(payload->'counts');perform pull_private.validate_pull_deltas(payload->'new_pulls');
   select jsonb_object_agg(id,coalesce((payload->'counts'->>id)::int,0)+coalesce((payload->'new_pulls'->>id)::int,0)) into totals from pull_private.cards;
   m:=payload->'master';b:=payload->'binder';g:=payload->'given';
   perform pull_private.validate_stock(totals,m,b,g);
@@ -84,7 +94,7 @@ begin
  if operation='save' then insert into pull_private.inventory_requests(request_id,list_id,payload,result) values(req,l.id,payload,result);end if;
  return result;
 end $$;
-revoke all on function pull_private.stock_available(jsonb,jsonb,jsonb,jsonb),pull_private.stock_sets(jsonb),pull_private.validate_stock(jsonb,jsonb,jsonb,jsonb),pull_private.stock_result(uuid),pull_private.guard_stock_totals(),pull_private.inventory_application(text,jsonb) from public,anon,authenticated;
+revoke all on function pull_private.validate_pull_deltas(jsonb),pull_private.stock_available(jsonb,jsonb,jsonb,jsonb),pull_private.stock_sets(jsonb),pull_private.validate_stock(jsonb,jsonb,jsonb,jsonb),pull_private.stock_result(uuid),pull_private.guard_stock_totals(),pull_private.inventory_application(text,jsonb) from public,anon,authenticated;
 grant execute on function pull_private.inventory_application(text,jsonb) to authenticated;
 create function public.pull_inventory(operation text,payload jsonb) returns jsonb language sql security invoker set search_path='' as $$select pull_private.inventory_application(operation,payload);$$;
 revoke all on function public.pull_inventory(text,jsonb) from public,anon;

@@ -10,8 +10,8 @@ Die alte Angebotsübernahme wird serverseitig nicht mehr angenommen. Bitte die n
 
 ## Die sechs Werte
 
-- Gesamtpulls: bisher gespeicherte Pulls plus vorgemerkte neue Pulls als Vorschau. Die Anzeige ist berechnet; Korrekturen sind weiterhin über einen geprüften Import möglich.
-- Neue Pulls: zusätzliche Exemplare eintragen und „Änderungen speichern“ wählen. Erst dann werden sie addiert; danach steht das Eingabefeld auf 0.
+- Gesamtpulls: bisher gespeicherte Pulls plus vorgemerkte neue Pulls als Vorschau. Die Anzeige ist berechnet; Korrekturen sind direkt durch negative ganze Zahlen unter „Neue Pulls / Korrektur“ möglich.
+- Neue Pulls / Korrektur: positive Werte addieren Exemplare, negative Werte korrigieren Gesamtpulls nach unten. Beim Speichern wird der Wert genau einmal verrechnet und das Eingabefeld auf 0 gesetzt. Die Gesamtpulls dürfen weder negativ werden noch unter den gebundenen und vergebenen Bestand fallen.
 - Masterset gebunden: reservierte Exemplare pro Karte, einzeln bearbeitbar.
 - Bindergebunden: separate Exemplare im Binder. Sie werden zusätzlich zur Masterset-Bindung abgezogen.
 - Vergeben: verkaufte, vertauschte, verschenkte und sonst abgegebene Exemplare.
@@ -43,7 +43,7 @@ Die zusätzlichen Bestandsfelder sind ausschließlich dem jeweiligen Listenbesit
 
 ## Sicherung und gleichzeitige Änderungen
 
-Persönliche Pull-Listen-Backups enthalten nun auch private Bindungen, Abgaben und vorgemerkte neue Pulls. Beim Wiederherstellen werden neue Pulls einmal addiert und zurückgesetzt. Alte Kartenbackups behalten die vorhandenen privaten Bindungen; widersprüchliche Mengen werden abgelehnt. Admin-Gesamtbackups ersetzen keine privaten Bestandsfelder.
+Persönliche Pull-Listen-Backups enthalten nun auch private Bindungen, Abgaben und vorgemerkte neue Pulls einschließlich negativer Korrekturen. Beim Wiederherstellen werden neue Pulls einmal addiert und zurückgesetzt. Alte Kartenbackups behalten die vorhandenen privaten Bindungen; widersprüchliche Mengen werden abgelehnt. Admin-Gesamtbackups ersetzen keine privaten Bestandsfelder.
 
 Veraltete Speicherversuche werden über Listen- und Bestandsversionen abgelehnt. Wiederholungen desselben erfolgreich verarbeiteten Neue-Pulls-Speicherversuchs addieren die Karten nicht doppelt. Bei einem Konflikt gegebenenfalls ein persönliches Backup sichern und „Gespeicherten Stand neu laden“ verwenden.
 
